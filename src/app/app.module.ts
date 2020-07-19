@@ -14,7 +14,10 @@ import { DoctoresComponent } from './doctores/doctores.component';
 import { MenuComponent } from './menu/menu.component';
 import { ClinicaComponent } from './clinica/clinica.component';
 import { FormularioComponent } from './formulario/formulario.component';
-import { ZoomComponent } from './zoom/zoom.component'
+import { ZoomComponent } from './zoom/zoom.component';
+import { ProfileComponent } from './profile/profile.component';
+import { DateComponent } from './date/date.component';
+import { DateInfoComponent } from './date-info/date-info.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { ZoomComponent } from './zoom/zoom.component'
     MenuComponent,
     ClinicaComponent,
     FormularioComponent,
-    ZoomComponent
+    ZoomComponent,
+    ProfileComponent,
+    DateComponent,
+    DateInfoComponent
   ],
   imports: [
     BrowserModule,

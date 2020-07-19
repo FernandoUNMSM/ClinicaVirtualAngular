@@ -1,0 +1,37 @@
+<app-menu></app-menu>
+<div class="profile-container">
+  <div class="profile">
+    <div class="profile-img">
+      <fa-icon [icon]="faUserAlt"></fa-icon>
+    </div>
+    <h3 class="name">Nombre y apellido</h3>
+    <div class="info">
+      <p>DNI: {{ dni }}</p>
+      <p>Celular: {{ celular }}</p>
+      <p>Edad: {{ edad }}</p>
+      <p>Email: {{ email }}</p>
+    </div>
+    <button class="button">Modificar datos</button>
+    <button class="button">Cerrar sesión</button>
+  </div>
+  <div class="dates">
+    <div class="programadas">
+      <h5>Citas programadas</h5>
+      <div class="list">
+        <app-date></app-date>
+        <app-date></app-date>
+        <app-date></app-date>
+        <app-date></app-date>
+      </div>
+    </div>
+    <div class="recientes">
+      <h5>Citas recientes</h5>
+      <div class="list">
+        <app-date></app-date>
+        <app-date></app-date>
+        <app-date></app-date>
+        <app-date></app-date>
+      </div>
+    </div>
+  </div>
+</div>

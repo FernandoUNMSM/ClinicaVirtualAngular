@@ -1,0 +1,18 @@
+:host {
+    /* background: linear-gradient(to bottom, rgb(31, 172, 207), rgb(27, 211, 218)); */
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+.menu-container {
+    background-color: rgb(27, 211, 218);
+}
+
+.footer-container {
+    margin-top: 1000px;
+}

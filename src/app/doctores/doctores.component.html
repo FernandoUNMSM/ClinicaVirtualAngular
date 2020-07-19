@@ -1,0 +1,96 @@
+<div class="menu-container" #menuContainer>
+	<div class="abrirMenu">
+		<p>
+			<fa-icon [icon]="faBars" #abrirButton (click)="abrirMenu()"></fa-icon>
+		</p>
+	</div>
+	<div class="menuExtra" id="menu" #menuOffCanvas>
+		<div class="cerrarMenu">
+			<p>
+				<fa-icon [icon]="faTimesCircle" #cerrarButton (click)="abrirMenu()"></fa-icon>
+			</p>
+		</div>
+		<div class="extra" #extra>
+			<div class="covid">
+				<fa-icon [icon]="faVirus"></fa-icon>
+				<h1>COVID-19</h1>
+			</div>
+			<div class="contacto-header">
+				<h1>Central de citas: <a href=""> (01) XXX XXXX</a></h1>
+				<h1><a [routerLink]="['../login']">
+					<fa-icon [icon]="faUserAlt"></fa-icon> Clinica Online</a></h1>
+			</div>
+		</div>
+		<div class="menu" #menu>
+			<nav>
+				<ul>
+					<li><a href=""><fa-icon [icon]="faHome"></fa-icon></a></li>
+					<li><a href="">Especialidades</a></li>
+					<li><a href="">Staff Medico</a></li>
+					<li><a href="">Contacto</a></li>
+					<li><a href="" class="cita" [routerLink]="['../login']">Reserva tu cita</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="logo-container" #logoContainer>
+		<figure class="logo">
+			<img src="./../../assets/img/logo.png" alt="logo" #logo>
+		</figure>
+	</div>
+</div>
+
+<div class="doctores-container">
+	<div class="tituo">
+		<h1>Doctores</h1>
+	</div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer-container">
+	<div class="footer-main" #footerMain>
+		<div class="footer-left">
+			<img src="./../../assets/img/logo.png" alt="Logo">
+			<p>&copy 2020 Clínica Montefiori</p>
+		</div>
+		<div class="footer-info" #footerInfo>
+			<h2 class="footer-title">Más información</h2>
+			<ul>
+				<li>
+					<a href="#">Acerca de nosotros</a>
+				</li>
+				<li>
+					<a href="#">Nuestras especialidades</a>
+				</li>
+				<li>
+					<a href="#">Nuestros staff médico</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-contact" #footerContact>
+			<h2 class="footer-title">Contáctenos</h2>
+			<form action="">
+				<input class="input" type="email" name="email" id="email" placeholder="Correo electrónico">
+				<input class="button" type="submit" value="Enviar">
+			</form>
+		</div>
+	</div>
+</footer>

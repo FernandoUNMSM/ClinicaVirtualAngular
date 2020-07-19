@@ -1,0 +1,48 @@
+<app-menu></app-menu>
+<div class="formulario-container">
+	<div class="titulo">
+		<h1>Formulario de citas</h1>
+	</div>
+	<form action="">
+		<div class="formulario">
+			<div class="izquierda">
+				<label for="especialidad">Especialidad*</label>
+				<input type="text" name="Especialidad" id="" autocomplete="off" required> 
+				<label for="historial">Historial Medico</label>
+				<input type="file" name="historial" id="">
+				<label for="dolor">Escala de dolor(1-10)*</label>
+				<input type="number" name="dolor" id="">
+				<label for="fecha">Fecha cuando inicio el dolor*</label>
+				<input type="text" name="fecha" id="" autocomplete="off">
+				<label for="especialidad">Especialidad*</label>
+				<input type="text" name="Especialidad" id="" autocomplete="off">
+
+			</div>
+			<div class="derecha">
+				<div class="sintomas">
+					<h2>Sintomas (Max. 5)</h2>
+					<div class="sintomas-container" #sintomasContainer>
+						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "0<inputsActual">
+						<fa-icon [icon]="faTrash"*ngIf = "0<inputsActual"></fa-icon>
+						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "1<inputsActual">
+						<fa-icon [icon]="faTrash"*ngIf = "1<inputsActual"></fa-icon>
+						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "2<inputsActual">
+						<fa-icon [icon]="faTrash"*ngIf = "2<inputsActual"></fa-icon>
+						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "3<inputsActual">
+						<fa-icon [icon]="faTrash"*ngIf = "3<inputsActual"></fa-icon>
+						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "4<inputsActual">
+						<fa-icon [icon]="faTrash"*ngIf = "4<inputsActual"></fa-icon>
+					</div>
+					<div class="anadirSintoma" #anadirSintoma (click)="sumarSintoma()" *ngIf= " 5>inputsActual">
+							<fa-icon [icon]="faPlusCircle"></fa-icon>
+					</div>
+				</div>
+				<div class="descripcion">
+					<h2>Descripcion</h2>
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+				</div>
+			</div>
+		</div>
+		<button type="submit">Enviar</button>
+	</form>
+</div>

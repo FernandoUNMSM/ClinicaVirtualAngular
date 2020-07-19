@@ -1,0 +1,259 @@
+<div class="menu-container" #menuContainer>
+	<div class="abrirMenu">
+		<p>
+			<fa-icon [icon]="faBars" #abrirButton (click)="abrirMenu()"></fa-icon>
+		</p>
+	</div>
+	<div class="menuExtra" id="menu" #menuOffCanvas>
+		<div class="cerrarMenu">
+			<p>
+				<fa-icon [icon]="faTimesCircle" #cerrarButton (click)="abrirMenu()"></fa-icon>
+			</p>
+		</div>
+		<div class="extra" #extra>
+			<div class="covid">
+				<fa-icon [icon]="faVirus"></fa-icon>
+				<h1>COVID-19</h1>
+			</div>
+			<div class="contacto-header">
+				<h1>Central de citas: <a href=""> (01) XXX XXXX</a></h1>
+				<h1><a [routerLink]="['../login']">
+					<fa-icon [icon]="faUserAlt"></fa-icon> Clinica Online</a></h1>
+			</div>
+		</div>
+		<div class="menu" #menu>
+			<nav>
+				<ul>
+					<li><a href=""><fa-icon [icon]="faHome"></fa-icon></a></li>
+					<li><a href="">Especialidades</a></li>
+					<li><a href="">Staff Medico</a></li>
+					<li><a href="">Contacto</a></li>
+					<li><a href="" class="cita" [routerLink]="['../login']">Reserva tu cita</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="logo-container" #logoContainer>
+		<figure class="logo">
+			<img src="./../../assets/img/logo.png" alt="logo" #logo>
+		</figure>
+	</div>
+</div>
+
+<!-- FIN MENU -->
+
+<!-- INICIO HEADER -->
+
+<header class="header">
+	<div class="header1 headers" #headers></div>
+	<div class="header2 headers" style="visibility: hidden; opacity: 0"#headers></div>
+	<div class="header3 headers" style="visibility: hidden; opacity: 0"#headers></div>
+</header>
+
+<!-- FIN HEADER -->
+
+<!-- INICIO ESPECIALIDADES -->
+
+<section class="especialidades-container">
+	<h1>Nuestras Especialidades</h1>
+	<div class="especialidades">
+		<div class="especialidades-card">
+			<a href="">
+				<div class="subtitulo">
+					<h2>Especialidad de</h2>
+				</div>
+				<div class="central cardiologia">
+					<figure>
+						<img src="./../../assets/img/cardioIcon.png" alt="">
+					</figure>
+					<h1>Cardiologia</h1>
+				</div>
+				<div class="enlace">VER MÁS <fa-icon [icon]="faChevronCircleRight"></fa-icon></div>
+			</a>
+		</div>
+		<div class="especialidades-card">
+			<a href="">
+				<div class="subtitulo">
+					<h2>Especialidad de</h2>
+				</div>
+				<div class="central">
+					<figure>
+						<img src="./../../assets/img/cancerIcon.png" alt="">
+					</figure>
+					<h1>Oncologia</h1>
+				</div>
+				<div class="enlace">VER MÁS <fa-icon [icon]="faChevronCircleRight"></fa-icon></div>
+			</a>
+		</div>
+		<div class="especialidades-card">
+			<a href="">
+				<div class="subtitulo">
+					<h2>Especialidad de</h2>
+				</div>
+				<div class="central">
+					<figure>
+						<img src="./../../assets/img/stomatchIcon.png" alt="">
+					</figure>
+					<h1>Gastroenterologia</h1>
+				</div>
+				<div class="enlace">VER MÁS <fa-icon [icon]="faChevronCircleRight"></fa-icon></div>
+			</a>
+		</div>
+		<div class="especialidades-card">
+			<a href="">
+				<div class="subtitulo">
+					<h2>Especialidad de</h2>
+				</div>
+				<div class="central">
+					<figure>
+						<img src="./../../assets/img/ginecoIcon.png" alt="">
+					</figure>
+					<h1>Ginecologia</h1>
+				</div>
+				<div class="enlace">VER MÁS <fa-icon [icon]="faChevronCircleRight"></fa-icon></div>
+			</a>
+		</div>
+		<div class="especialidades-card">
+			<a href="">
+				<div class="subtitulo">
+					<h2>Especialidad de</h2>
+				</div>
+				<div class="central">
+					<figure>
+						<img src="./../../assets/img/pediatriaIcon.png" alt="">
+					</figure>
+					<h1>Pediatria</h1>
+				</div>
+				<div class="enlace">VER MÁS <fa-icon [icon]="faChevronCircleRight"></fa-icon></div>
+			</a>
+		</div>
+	</div>
+	<a href="">
+		<div class="masEspe">
+			<h2>Ver mas especialidades <fa-icon [icon]="faChevronCircleRight"></fa-icon></h2>
+		</div>
+	</a>
+</section>
+
+<!-- FIN ESPECIALIDADES -->
+
+<!-- INICIO STAFF -->
+
+<section class="staff-container">
+	<h1>Nuestro STAFF</h1>
+	<div class="staff-group">
+		<div class="responStaff">
+			<a href="">
+				<div class="staff">
+					<div class="info">
+						<div class="arriba">
+							<h2>Ginecologia</h2>
+						</div>
+						<div class="medio">
+							<h1>Doctor Garcia</h1>
+							<p>Doctor en Jefe de Ginecologia</p>
+						</div>
+						<div class="abajo">
+							<p>Conoce más <fa-icon [icon]="faChevronCircleRight"></fa-icon></p>
+						</div>
+					</div>
+					<figure><img src="./../../assets/img/staff1.jpg" alt=""></figure>
+				</div>
+			</a>
+			<a href="">
+				<div class="staff">
+					<div class="info">
+						<div class="arriba">
+							<h2>Oncologia</h2>
+						</div>
+						<div class="medio">
+							<h1>Doctor Perez</h1>
+							<p>Doctor en Jefe de Oncologia</p>
+						</div>
+						<div class="abajo">
+							<p>Conoce más <fa-icon [icon]="faChevronCircleRight"></fa-icon></p>
+						</div>
+					</div>
+					<figure><img src="./../../assets/img/staff1.jpg" alt=""></figure>
+				</div>
+			</a>
+		</div>
+		<div class="responStaff">
+			<a href="">
+				<div class="staff">
+					<div class="info">
+						<div class="arriba">
+							<h2>Cardiologia</h2>
+						</div>
+						<div class="medio">
+							<h1>Doctor Mirano</h1>
+							<p>Doctor en Jefe de Cardiologia</p>
+						</div>
+						<div class="abajo">
+							<p>Conoce más <fa-icon [icon]="faChevronCircleRight"></fa-icon></p>
+						</div>
+					</div>
+					<figure><img src="./../../assets/img/staff1.jpg" alt=""></figure>
+				</div>
+			</a>
+			<a href="">
+				<div class="staff">
+					<div class="info">
+						<div class="arriba">
+							<h2>Cardiologia</h2>
+						</div>
+						<div class="medio">
+							<h1>Doctor Mirano</h1>
+							<p>Doctor en Jefe de Cardiologia</p>
+						</div>
+						<div class="abajo">
+							<p>Conoce más <fa-icon [icon]="faChevronCircleRight"></fa-icon></p>
+						</div>
+					</div>
+					<figure><img src="./../../assets/img/staff1.jpg" alt=""></figure>
+				</div>
+			</a>
+		</div>
+
+	</div>
+	<a href=""[routerLink]="['../doctores']" style="text-decoration: none;" >
+		<div class="masDoc">
+			<h1>Conoce a todo nuestro Staff <fa-icon [icon]="faChevronCircleRight"></fa-icon></h1>
+		</div>
+	</a>
+
+</section>
+
+<!-- FIN STAFF -->
+
+<!-- INICIO FOOTER -->
+
+<footer class="footer-container">
+	<div class="footer-main" #footerMain>
+		<div class="footer-left">
+			<img src="./../../assets/img/logo.png" alt="Logo">
+			<p>&copy 2020 Clínica Montefiori</p>
+		</div>
+		<div class="footer-info" #footerInfo>
+			<h2 class="footer-title">Más información</h2>
+			<ul>
+				<li>
+					<a href="#">Acerca de nosotros</a>
+				</li>
+				<li>
+					<a href="#">Nuestras especialidades</a>
+				</li>
+				<li>
+					<a href="#">Nuestros staff médico</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-contact" #footerContact>
+			<h2 class="footer-title">Contáctenos</h2>
+			<form action="">
+				<input class="input" type="email" name="email" id="email" placeholder="Correo electrónico">
+				<input class="button" type="submit" value="Enviar">
+			</form>
+		</div>
+	</div>
+</footer>

@@ -1,4 +1,5 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { faUserAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-clinica',
@@ -6,6 +7,12 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./clinica.component.css']
 })
 export class ClinicaComponent implements OnInit {
+  faUserAlt = faUserAlt;
+  dni = 12345678;
+  celular = 123456789;
+  edad = 20;
+  email = 'test@gmail.com'
+
   constructor() { }
 
   ngOnInit(): void {

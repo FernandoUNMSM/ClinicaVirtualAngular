@@ -2,8 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { routing, appRoutingProviders } from './app.routing';
-import { MatTabsModule } from '@angular/material/tabs';
-import {MatButtonModule} from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +15,9 @@ import { DoctoresComponent } from './doctores/doctores.component';
 import { MenuComponent } from './menu/menu.component';
 import { ClinicaComponent } from './clinica/clinica.component';
 import { FormularioComponent } from './formulario/formulario.component';
-import { ZoomComponent } from './zoom/zoom.component'
+import { ZoomComponent } from './zoom/zoom.component';
+import { DateInfoComponent } from './date-info/date-info.component';
+import { DateComponent } from './date/date.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +28,9 @@ import { ZoomComponent } from './zoom/zoom.component'
     MenuComponent,
     ClinicaComponent,
     FormularioComponent,
-    ZoomComponent
+    ZoomComponent,
+    DateInfoComponent,
+    DateComponent
   ],
   imports: [
     BrowserModule,
@@ -33,8 +38,7 @@ import { ZoomComponent } from './zoom/zoom.component'
     FontAwesomeModule,
     routing,
     BrowserAnimationsModule,
-    MatTabsModule,
-    MatButtonModule
+    FormsModule
   ],
   providers: [
     appRoutingProviders,

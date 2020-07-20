@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ClinicaVirtual';
+
+  
+  public Usuario:any;
+  public Contrasena:any;
 }
+export var Usuario;

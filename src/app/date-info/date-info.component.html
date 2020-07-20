@@ -1,0 +1,66 @@
+<div class="dateInfo-container">
+	<div class="navigation">
+		<a [routerLink]="['../clinica']">
+			<fa-icon [icon]="faArrowLeft"></fa-icon>
+		</a>
+		<div class="info">
+			<h2>{{ especialidad }}</h2>
+			<p>{{ hora }} - {{ fecha }}</p>
+		</div>
+	</div>
+
+	<div class="doctor-container">
+		<div class="doctor-profile">
+			<div class="doctor-img">
+				<fa-icon [icon]="faUserAlt"></fa-icon>
+			</div>
+			<h3 class="doctor-name">Nombre y apellido</h3>
+			<div class="doctor-info">
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod autem
+					neque cumque animi suscipit beatae facere molestiae asperiores,
+					debitis officia quae quaerat sint id, dicta est illo eligendi
+					corrupti. Hic.
+				</p>
+			</div>
+		</div>
+
+		<div class="doctor-recomendations">
+			<div class="sintomas">
+				<h5>Sintomas</h5>
+				<div class="list">
+					<ul>
+						<li>Sintoma 1</li>
+						<li>Sintoma 2</li>
+						<li>Sintoma 3</li>
+						<li>Sintoma 4</li>
+						<li>Sintoma 5</li>
+						<li>Sintoma 5</li>
+						<li>Sintoma 5</li>
+						<li>Sintoma 5</li>
+						<li>Sintoma 5</li>
+						<li>Sintoma 5</li>
+						<li>Sintoma 5</li>
+						<li>Sintoma 5</li>
+						<li>Sintoma 5</li>
+						<li>Sintoma 5</li>
+					</ul>
+				</div>
+			</div>
+			<div class="recomendaciones">
+				<h5>Recomendaciones</h5>
+				<div class="list">
+					<ul>
+						<li>Recomendación 1</li>
+						<li>Recomendación 2</li>
+						<li>Recomendación 3</li>
+						<li>Recomendación 4</li>
+						<li>Recomendación 5</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<button class="button">Descargar la receta en PDF</button>
+</div>

@@ -485,11 +485,16 @@ body {
 
 .staff-container .staff-group .responStaff {
     display: flex;
+    width: 50%;
 }
 
+.staff-container .staff-group .responStaff > a{
+    width: 50%;
+}
 .staff-container .staff-group .staff {
     position: relative;
     overflow: hidden;
+    height: 100%;
 }
 
 .staff-container .staff-group .staff::after {
@@ -524,9 +529,12 @@ body {
     opacity: 0;
     line-height: initial;
 }
-
+.staff-container .staff-group figure {
+    height: 100%;
+}
 .staff-container .staff-group figure img {
     width: 100%;
+    height: 100%;
 }
 
 .staff-container .staff .info .arriba h2 {

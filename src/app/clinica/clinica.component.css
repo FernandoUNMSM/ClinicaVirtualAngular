@@ -1,0 +1,83 @@
+* {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .profile-container {
+    margin-left: 170px;
+    width: calc(100% - 170px);
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .profile {
+    height: 75%;
+    width: 400px;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-img {
+    width: fit-content;
+    height: fit-content;
+    font-size: 100px;
+  }
+  
+  .info {
+    margin: 15% 0;
+    width: 80%;
+  }
+  
+  .button {
+    width: 180px;
+    height: 60px;
+    background-color: #1bd3da;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Citas */
+  .dates {
+    height: 85%;
+    width: 55%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .dates h5 {
+    font-size: 15px;
+  }
+  
+  .programadas, .recientes {
+    height: 45%;
+    width: 100%;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .list {
+    width: 95%;
+    height: calc(100% - 13px);
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    overflow: scroll;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }

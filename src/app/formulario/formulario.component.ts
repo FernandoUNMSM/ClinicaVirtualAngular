@@ -26,7 +26,12 @@ export class FormularioComponent implements OnInit {
       this.inputsActual++;
       
   }
-
+  aviso(){
+    alert("Informacion enviada");
+    setTimeout(()=>
+      location.reload(),1000
+    );
+  }
   faPlusCircle = faPlusCircle;
   faTrash = faTrash;
 }

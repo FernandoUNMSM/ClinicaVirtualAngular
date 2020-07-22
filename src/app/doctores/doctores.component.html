@@ -24,9 +24,9 @@
 		<div class="menu" #menu>
 			<nav>
 				<ul>
-					<li><a href=""><fa-icon [icon]="faHome"></fa-icon></a></li>
+					<li><a href="" [routerLink]="['../home']"><fa-icon [icon]="faHome"></fa-icon></a></li>
 					<li><a href="">Especialidades</a></li>
-					<li><a href="">Staff Medico</a></li>
+					<li><a href="" [routerLink]="['../doctores']">Staff Medico</a></li>
 					<li><a href="">Contacto</a></li>
 					<li><a href="" class="cita" [routerLink]="['../login']">Reserva tu cita</a></li>
 				</ul>
@@ -40,11 +40,22 @@
 	</div>
 </div>
 
+
 <div class="doctores-container">
-	<div class="tituo">
-		<h1>Doctores</h1>
+	<div class="titulo">
+		<h1>Nuestros doctores</h1>
 	</div>
-	
+	<div class="doctores">
+		<div class="doctor" *ngFor = "let valor of doctores; let indice = index">
+			<h1>{{valor.nombre}}</h1>
+			<p><strong>Universidad:</strong> {{valor.universidad}}</p>
+			<p><strong>Especialida:</strong> {{valor.especialidad}}</p>
+			<p><strong>Años de Servicio:</strong> {{valor.anosServicio}}</p> 
+			<p><strong>Puntuacion:</strong> {{valor.puntuacion}}</p>
+			<p><strong>Numero de colegiatura (cmp):</strong> {{valor.cmp}}</p>
+			<img src="../../assets/img/doctores/{{valor.img_url}}">
+		</div>
+	</div>
 </div>
 
 

@@ -136,19 +136,43 @@
     font-family: 'Poppins', sans-serif;
     color: rgb(35, 216, 223);
 }
-
+.incorrecto-container {
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: none;
+}
 .incorrecto {
     width: 500px;
     height: 400px;
-    background-color: #ccc;
+    background-color: white;
     position: absolute;
     top: 50%;
     right: 50%;
     transform: translate(50%,-50%);
     text-align: center;
-    display: none;
     flex-direction: column;
 }
 .incorrecto fa-icon{
     font-size: 200px;
+    color: rgb(35, 216, 223);
 }
+.incorrecto h1{
+    color: rgb(35, 216, 223);
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+.incorrecto button {
+    width: 200px;
+    margin: auto;
+    outline: none;
+    border: none;
+    background-color: rgb(35, 216, 223);
+    color: white;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+

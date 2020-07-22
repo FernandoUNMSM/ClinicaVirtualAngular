@@ -14,5 +14,46 @@
 }
 
 .footer-container {
-    margin-top: 1000px;
+    margin-top: 100px;
+}
+
+/* .espacio {
+    display: block;
+    width: 100%;
+    height: 150px;
+} */
+
+
+.titulo {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px 0 50px;
+    color: #1BD3DA;
+}
+.doctores-container {
+    padding-top: 150px;
+}
+
+.doctores {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px 0;
+    margin-left: 50px;
+}
+.doctores {
+    /* margin-bottom: 20px; */
+}
+.doctores .doctor p {
+    color: rgb(80, 72, 72);
+    margin: 3px 0;
+
+}
+.doctores .doctor h1, .doctores .doctor strong {
+    color: #1BD3DA;
+}
+.doctores .doctor img {
+    margin-top: 20px;
+    width: 300px;
+    height: 350px;
 }

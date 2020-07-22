@@ -3,11 +3,12 @@
   }
   
   .dateInfo-container {
-    width: 100vw;
+    width: calc(100vw - 170px);
     height: 100vh;
     padding: 20px 80px;
     display: flex;
     flex-direction: column;
+    margin-left: 170px;
   }
   
   .navigation {
@@ -88,7 +89,7 @@
     margin: 0 auto;
     padding-left: 18px;
     font-size: 16px;
-    overflow: scroll;
+    overflow: auto;
   }
   
   ::-webkit-scrollbar {

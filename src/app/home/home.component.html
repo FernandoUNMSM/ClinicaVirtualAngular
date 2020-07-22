@@ -24,9 +24,9 @@
 		<div class="menu" #menu>
 			<nav>
 				<ul>
-					<li><a href=""><fa-icon [icon]="faHome"></fa-icon></a></li>
+					<li><a href="" [routerLink]="['./home']"><fa-icon [icon]="faHome"></fa-icon></a></li>
 					<li><a href="">Especialidades</a></li>
-					<li><a href="">Staff Medico</a></li>
+					<li><a href="" [routerLink]="['../doctores']">Staff Medico</a></li>
 					<li><a href="">Contacto</a></li>
 					<li><a href="" class="cita" [routerLink]="['../login']">Reserva tu cita</a></li>
 				</ul>
@@ -143,74 +143,74 @@
 	<h1>Nuestro STAFF</h1>
 	<div class="staff-group">
 		<div class="responStaff">
-			<a href="">
+			<a href="" [routerLink]="['../doctores']">
+				<div class="staff">
+					<div class="info">
+						<div class="arriba">
+							<h2>Oftalmologia</h2>
+						</div>
+						<div class="medio">
+							<h1>Dr. Cortez</h1>
+							<p>Dr. en Jefe de Oftalmologia</p>
+						</div>
+						<div class="abajo">
+							<p>Conoce más <fa-icon [icon]="faChevronCircleRight"></fa-icon></p>
+						</div>
+					</div>
+					<figure><img src="./../../assets/img/doctores/6.jpg" alt=""></figure>
+				</div>
+			</a>
+			<a href="" [routerLink]="['../doctores']">
 				<div class="staff">
 					<div class="info">
 						<div class="arriba">
 							<h2>Ginecologia</h2>
 						</div>
 						<div class="medio">
-							<h1>Doctor Garcia</h1>
-							<p>Doctor en Jefe de Ginecologia</p>
+							<h1>Dra. Gomez</h1>
+							<p>Dra. en Jefe de Ginecologia</p>
 						</div>
 						<div class="abajo">
 							<p>Conoce más <fa-icon [icon]="faChevronCircleRight"></fa-icon></p>
 						</div>
 					</div>
-					<figure><img src="./../../assets/img/staff1.jpg" alt=""></figure>
-				</div>
-			</a>
-			<a href="">
-				<div class="staff">
-					<div class="info">
-						<div class="arriba">
-							<h2>Oncologia</h2>
-						</div>
-						<div class="medio">
-							<h1>Doctor Perez</h1>
-							<p>Doctor en Jefe de Oncologia</p>
-						</div>
-						<div class="abajo">
-							<p>Conoce más <fa-icon [icon]="faChevronCircleRight"></fa-icon></p>
-						</div>
-					</div>
-					<figure><img src="./../../assets/img/staff2.png" alt=""></figure>
+					<figure><img src="./../../assets/img/doctores/2.jpg" alt=""></figure>
 				</div>
 			</a>
 		</div>
 		<div class="responStaff">
-			<a href="">
+			<a href="" [routerLink]="['../doctores']">
 				<div class="staff">
 					<div class="info">
 						<div class="arriba">
-							<h2>Cardiologia</h2>
+							<h2>Dermatologia</h2>
 						</div>
 						<div class="medio">
-							<h1>Doctor Mirano</h1>
-							<p>Doctor en Jefe de Cardiologia</p>
+							<h1>Dr. Castillo</h1>
+							<p>Dr. en Jefe de Dermatologia</p>
 						</div>
 						<div class="abajo">
 							<p>Conoce más <fa-icon [icon]="faChevronCircleRight"></fa-icon></p>
 						</div>
 					</div>
-					<figure><img src="./../../assets/img/staff3.png" alt=""></figure>
+					<figure><img src="./../../assets/img/doctores/1.jpg" alt=""></figure>
 				</div>
 			</a>
-			<a href="">
+			<a href="" [routerLink]="['../doctores']">
 				<div class="staff">
 					<div class="info">
 						<div class="arriba">
-							<h2>Cardiologia</h2>
+							<h2>Pediatria</h2>
 						</div>
 						<div class="medio">
-							<h1>Doctor Mirano</h1>
-							<p>Doctor en Jefe de Cardiologia</p>
+							<h1>Dr. Barrenechea</h1>
+							<p>Dr. en Jefe de Pediatria</p>
 						</div>
 						<div class="abajo">
 							<p>Conoce más <fa-icon [icon]="faChevronCircleRight"></fa-icon></p>
 						</div>
 					</div>
-					<figure><img src="./../../assets/img/staff4.png" alt=""></figure>
+					<figure><img src="./../../assets/img//doctores/3.jpg" alt=""></figure>
 				</div>
 			</a>
 		</div>

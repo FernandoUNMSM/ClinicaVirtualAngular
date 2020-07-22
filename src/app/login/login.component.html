@@ -6,36 +6,36 @@
 	</div>
 	<div class="loginBody">
 		<div class="login" #login>
-			<form action="">
+			<form action="POST">
 				<div class="uc usuario">
 					<label for="usuario"><fa-icon [icon]="faUserAlt"></fa-icon> Usuario</label>
-					<input type="text" name="usuario" id="" placeholder="Usuario" autocomplete="off" [(ngModel)]="Usuario">
-				</div>
+					<input type="text" name="usuario" placeholder="Usuario" autocomplete="off" [(ngModel)]="Usuario" required>
+				</div>	
 				<div class="uc contrasena">
 					<label for="Contraseña"><fa-icon [icon]="faLock"></fa-icon> Contraseña</label>
-					<input type="password" name="Contraseña" id="" placeholder="Contrasena" [(ngModel)]="Contrasena">
+					<input type="password" name="" id="" placeholder="Contraseña" #myPsw required>
 				</div>
-				<button type="submit" (click)="redireccion()">Ingresar</button>
+				<button type="sumbit" (click)="redireccion()">Ingresar</button>
 			</form>
 		</div>
 		<div class="registro" #registro>
 			<form action="">
 				<div class="uc usuario">
-					<input type="text" name="usuario" id="" placeholder="Nombre de Usuario" autocomplete="off">
+					<input type="text" name="usuario" placeholder="Nombre de Usuario" autocomplete="off">
 				</div>
 				<div class="uc email">
-					<input type="email" name="email" id="" placeholder="e-mail" autocomplete="off">
+					<input type="email" name="email" placeholder="e-mail" autocomplete="off">
 				</div>
 				<div class="uc usuario">
-					<input type="text" name="usuario" id="" placeholder="DNI" autocomplete="off">
+					<input type="text" name="usuario" placeholder="DNI" autocomplete="off">
 				</div>
 				<div class="uc password">
-					<input type="password" name="password" id="" placeholder="Contraseña">
+					<input type="password" name="password" placeholder="Contraseña">
 				</div>
 				<div class="uc password2">
-					<input type="password" name="password" id="" placeholder="Contraseña">
+					<input type="password" name="password" placeholder="Confirmar Contraseña">
 				</div>
-				<button type="submit">Registrarse</button>
+				<button type="button" (click)="generar()">Registrarse</button>
 			</form>
 		</div>
 	</div>
@@ -44,8 +44,8 @@
 		<a [routerLink]="['../home']">Volver al Home</a>
 </div>
 
-
-<div class="incorrecto" #incorrecto>
+<div class="incorrecto-container" #incorrecto>
+	<div class="incorrecto">
 	<div class="datos">
 		<h1>Datos Incorrectos</h1>
 		<p>Vuelva a ingresar sus datos</p>
@@ -54,4 +54,5 @@
 		<fa-icon [icon]="faTimes"></fa-icon>
 	</div>
 	<button (click)="volverLogin()">Cerrar</button>
+	</div>
 </div>

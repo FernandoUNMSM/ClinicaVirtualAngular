@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
   @ViewChild("registro") registro:ElementRef;
   @ViewChild("line") line:ElementRef;
   @ViewChild("incorrecto") incorrecto:ElementRef;
+  @ViewChild("myPsw") myPsw:ElementRef;
   public Usuario:any;
   public Contrasena:any;
   constructor(private _route: ActivatedRoute, private _router: Router) { 
@@ -23,6 +24,8 @@ export class LoginComponent implements OnInit {
   }
 
   redireccion(){
+    this.Contrasena = this.myPsw.nativeElement.value;
+    // console.log(this.Contrasena);
     if(this.Usuario == "test" && this.Contrasena == "test") {
       this._router.navigate(['/clinica']);
     }
@@ -33,7 +36,9 @@ export class LoginComponent implements OnInit {
   volverLogin(){
     location.reload();
   }
-
+  generar(){
+    
+  }
   abrirRegistro(){
     this.registro.nativeElement.classList.add('registroActive');
     this.login.nativeElement.classList.add('loginOff');
@@ -45,7 +50,6 @@ export class LoginComponent implements OnInit {
     this.login.nativeElement.classList.remove('loginOff');
     this.line.nativeElement.classList.remove('lineActive');
   }
-
 
   faUserAlt = faUserAlt;
   faLock = faLock;

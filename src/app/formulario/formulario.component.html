@@ -7,15 +7,30 @@
 		<div class="formulario">
 			<div class="izquierda">
 				<label for="especialidad">Especialidad*</label>
-				<input type="text" name="Especialidad" id="" autocomplete="off" required> 
+				<!-- <input type="text" name="Especialidad" id="" autocomplete="off" required>  -->
+				<mat-form-field >
+					<mat-label>State</mat-label>
+					<mat-select name="select" [(ngModel)]="select">
+						<mat-option [value]="0">None</mat-option>
+						<mat-option *ngFor="let state of states; let indices = index" [value]="indices+1" >{{state}}</mat-option>
+					</mat-select>
+				</mat-form-field>
+					<!-- <p>{{select}}</p> -->
 				<label for="historial">Historial Medico</label>
 				<input type="file" name="historial" id="">
-				<label for="dolor">Escala de dolor(1-10)*</label>
+				<label for="dolor">¿Alergia a medicamento o tratamiento?</label>
 				<input type="number" name="dolor" id="" required>
-				<label for="fecha">Fecha cuando inicio el dolor*</label>
+				<label for="fecha">¿Toma algun medicamento actualmente?</label>
 				<input type="text" name="fecha" id="" autocomplete="off" required>
-				<label for="especialidad">Especialidad*</label>
-				<input type="text" name="Especialidad" id="" autocomplete="off" required>
+				<label for="especialidad">Medicamentos recetados</label>
+				<!-- <input type="text" name="Especialidad" id="" autocomplete="off" required> -->
+				<mat-form-field >
+					<mat-label>State</mat-label>
+					<mat-select>
+						<mat-option [value]="0">Originales</mat-option>
+						<mat-option [value]="0">Genericos</mat-option>
+					</mat-select>
+				</mat-form-field>
 
 			</div>
 			<div class="derecha">

@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
+import { ConsultaService } from '../consulta.service';
 
 @Component({
   selector: "app-date",
@@ -6,12 +7,18 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./date.component.css"],
 })
 export class DateComponent implements OnInit {
-  especialidad = "Especialidad";
+  public consulta:any;
   nombreDoctor = "Nombre del doctor";
   hora = '17:05';
-  fecha = '18/07/2020';
+  fecha = '18/08/2020';
+  
+  @Input() especialidad:any;
+  constructor(private ConsultaService: ConsultaService) {
+    this.consulta = JSON.parse(localStorage.getItem("nuevoConsulta"));
+  }
 
-  constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // this.especialidad = this.consulta[].especialidad;
+  }
 }

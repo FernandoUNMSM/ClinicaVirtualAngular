@@ -18,7 +18,7 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { ZoomComponent } from './zoom/zoom.component';
 import { DateInfoComponent } from './date-info/date-info.component';
 import { DateComponent } from './date/date.component'
-
+import { MatSelectModule } from '@angular/material/select';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +30,8 @@ import { DateComponent } from './date/date.component'
     FormularioComponent,
     ZoomComponent,
     DateInfoComponent,
-    DateComponent
+    DateComponent,
+    // MatSelectModule
   ],
   imports: [
     BrowserModule,
@@ -38,7 +39,8 @@ import { DateComponent } from './date/date.component'
     FontAwesomeModule,
     routing,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    MatSelectModule
   ],
   providers: [
     appRoutingProviders,

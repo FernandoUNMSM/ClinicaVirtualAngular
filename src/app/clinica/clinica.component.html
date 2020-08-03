@@ -4,11 +4,11 @@
       <div class="profile-img">
         <fa-icon [icon]="faUserAlt"></fa-icon>
       </div>
-      <h3 class="name">Usuario Test</h3>
+      <h3 class="name">{{nombre}}</h3>
       <div class="info">
         <p>DNI: {{ dni }}</p>
-        <p>Celular: {{ celular }}</p>
-        <p>Edad: {{ edad }}</p>
+        <!-- <p>Celular: {{ celular }}</p> -->
+        <!-- <p>Edad: {{ edad }}</p> -->
         <p>Email: {{ email }}</p>
       </div>
       <!-- <button class="button">Modificar datos</button> -->
@@ -18,19 +18,29 @@
       <div class="programadas">
         <h5>Citas programadas</h5>
         <div class="list">
-          <app-date></app-date>
-          <app-date></app-date>
-          <app-date></app-date>
-          <app-date></app-date>
+          <div *ngFor="let consul of consulLength; let indice = index">
+            <a [routerLink]="['../date-info']">
+              <div class="container">
+                <div class="izquierda">
+                  <h3>{{consulta[indice].especialidad}}</h3>
+                  <p>{{nombreDoctor[indice]}}</p>
+                </div>
+                <div class="derecha">
+                  <h4>{{hora}}</h4>
+                  <p>{{fecha[indice]}}</p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       <div class="recientes">
         <h5>Citas recientes</h5>
         <div class="list">
+          <!-- <app-date></app-date>
           <app-date></app-date>
           <app-date></app-date>
-          <app-date></app-date>
-          <app-date></app-date>
+          <app-date></app-date> -->
         </div>
       </div>
     </div>

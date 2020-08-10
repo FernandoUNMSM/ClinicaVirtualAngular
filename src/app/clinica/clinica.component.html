@@ -18,29 +18,17 @@
       <div class="programadas">
         <h5>Citas programadas</h5>
         <div class="list">
-          <div *ngFor="let consul of consulLength; let indice = index">
-            <a [routerLink]="['../date-info']">
-              <div class="container">
-                <div class="izquierda">
-                  <h3>{{consulta[indice].especialidad}}</h3>
-                  <p>{{nombreDoctor[indice]}}</p>
-                </div>
-                <div class="derecha">
-                  <h4>{{hora}}</h4>
-                  <p>{{fecha[indice]}}</p>
-                </div>
-              </div>
-            </a>
+          <div *ngFor="let cita of citasProgramadasArray">
+            <app-date [especialidad]="cita.especialidad" [nombreDoctor]="cita.nombreDoctor" [hora]="cita.hora" [fecha]="cita.fecha" [finalizada]="cita.finalizada"></app-date>
           </div>
         </div>
       </div>
       <div class="recientes">
         <h5>Citas recientes</h5>
         <div class="list">
-          <!-- <app-date></app-date>
-          <app-date></app-date>
-          <app-date></app-date>
-          <app-date></app-date> -->
+          <div *ngFor="let cita of citasRecientesArray">
+            <app-date [especialidad]="cita.especialidad" [nombreDoctor]="cita.nombreDoctor" [hora]="cita.hora" [fecha]="cita.fecha" [finalizada]="cita.finalizada"></app-date>
+          </div>
         </div>
       </div>
     </div>

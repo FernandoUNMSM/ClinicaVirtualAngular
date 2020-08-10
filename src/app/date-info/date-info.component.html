@@ -1,4 +1,4 @@
-<app-menu></app-menu>	
+<app-menu></app-menu>
 <div class="dateInfo-container">
 	<div class="navigation">
 		<a [routerLink]="['../clinica']">
@@ -15,47 +15,38 @@
 			<div class="doctor-img">
 				<fa-icon [icon]="faUserAlt"></fa-icon>
 			</div>
-			<h3 class="doctor-name">Nombre y apellido</h3>
+			<h3 class="doctor-name">{{nombre}}</h3>
 			<div class="doctor-info">
 				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod autem
-					neque cumque animi suscipit beatae facere molestiae asperiores,
-					debitis officia quae quaerat sint id, dicta est illo eligendi
-					corrupti. Hic.
+					Egresado de {{universidad}} con {{tiempoServicio}} años de experiencia en la especialidad de {{especialidad}}
 				</p>
 			</div>
 		</div>
 
-		<div class="doctor-recomendations">
+		<div class="doctor-recomendations" *ngIf="finalizada">
 			<div class="sintomas">
 				<h5>Sintomas</h5>
 				<br>
-				<br>
 				<div class="list">
-					<ul>
-						<li>Sintoma 1</li>
-						<li>Sintoma 2</li>
-						<li>Sintoma 3</li>
-						<li>Sintoma 4</li>
-						<li>Sintoma 5</li>
+					<ul *ngFor="let sintoma of sintomas">
+						<li>{{sintoma}}</li>
 					</ul>
 				</div>
 			</div>
 			<div class="recomendaciones">
 				<h5>Recomendaciones</h5>
-				<br><br>
+				<br>
 				<div class="list">
-					<ul>
-						<li>Recomendación 1</li>
-						<li>Recomendación 2</li>
-						<li>Recomendación 3</li>
-						<li>Recomendación 4</li>
-						<li>Recomendación 5</li>
+					<ul *ngFor="let recom of recomendaciones">
+						<li>{{recom}}</li>
 					</ul>
 				</div>
 			</div>
-		</div>
+    </div>
+    <div class="doctor-recomendations" *ngIf="!finalizada">
+      Esta cita todavía no ha sido realizada
+    </div>
 	</div>
 
-	<button class="button">Descargar la receta en PDF</button>
+	<button class="button" *ngIf="finalizada">Descargar la receta en PDF</button>
 </div>

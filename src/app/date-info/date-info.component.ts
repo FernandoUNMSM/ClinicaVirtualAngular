@@ -23,6 +23,9 @@ export class DateInfoComponent implements OnInit {
   doctorInfoArray: any[] = [];
   doctorInfo: any;
 
+  sintomas: any;
+  recomendaciones: any;
+
   constructor(private http: HttpClient) {
     const urlParams = new URLSearchParams(window.location.search);
     const nombreDoctor = urlParams.get('name').replace(/ /g, '%20');

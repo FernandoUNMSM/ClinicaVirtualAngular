@@ -1,12 +1,26 @@
 <app-menu></app-menu>
-<div class="consulta-container">
+<div class="consulta-container" *ngIf="!finalizada">
     <div class="iframe-container" style="overflow: hidden; padding-top: 55.2%; position: relative;">
-        <iframe allow="microphone; camera" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;" src="https://us04web.zoom.us/wc/77363583191/start" frameborder="0"  ></iframe>
+        <iframe allow="microphone; camera" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;" src="https://us04web.zoom.us/wc/72754280166/start" frameborder="0"  ></iframe>
 	</div>
 </div>
 
 <div class="puntuar-container" #puntual>
 
+</div>
+
+<div class="stars" *ngIf="finalizada && redirect">
+  <h3>Califique a su doctor</h3>
+  <div class="star-container">
+    <fa-icon [icon]="faStar"></fa-icon>
+    <fa-icon [icon]="faStar"></fa-icon>
+    <fa-icon [icon]="faStar"></fa-icon>
+    <fa-icon [icon]="faStar"></fa-icon>
+    <fa-icon [icon]="faStar"></fa-icon>
+  </div>
+  <div>
+    <button (click)="redirigir()" [routerLink]="['../clinica']" class="button">Puntuar</button>
+  </div>
 </div>
 
 <button (click)="puntuar()">Finalizar consulta</button>

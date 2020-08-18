@@ -27,6 +27,9 @@ export class ClinicaComponent implements OnInit {
   hora = '17:05';
   public fecha = ['18/08/2020','10/08/2020','12/08/2020','15/08/2020','17/08/2020',];
 
+  public citasProgramadasArray:any;
+  public citasRecientesArray:any;
+
   public consultaArray: any[];
   constructor(private MiServicioService: MiServicioService, private ConsultaService: ConsultaService) {
   }
@@ -42,35 +45,35 @@ export class ClinicaComponent implements OnInit {
       {
         especialidad: 'Dermatología',
         nombreDoctor: 'Jorge Castillo Guerrero',
-        fecha: '10/08/2020',
+        fecha: '18/08/2020',
         hora: '10:00 AM',
         finalizada: false
       },
       {
         especialidad: 'Psicología',
         nombreDoctor: 'Guissela Gomez Correa',
-        fecha: '11/08/2020',
+        fecha: '19/08/2020',
         hora: '08:00 AM',
         finalizada: false
       },
       {
         especialidad: 'Pediatria',
         nombreDoctor: 'Ignacio Barrenechea Quispe',
-        fecha: '12/08/2020',
+        fecha: '20/08/2020',
         hora: '05:00 PM',
         finalizada: false
       },
       {
         especialidad: 'Medicina interna',
         nombreDoctor: 'Gustavo Cadillo Gamero',
-        fecha: '15/08/2020',
+        fecha: '23/08/2020',
         hora: '09:00 PM',
         finalizada: false
       },
       {
         especialidad: 'Otorrinolaringología',
         nombreDoctor: 'Maria Herrera Zegarra',
-        fecha: '17/08/2020',
+        fecha: '25/08/2020',
         hora: '05:00 PM',
         finalizada: false
       }

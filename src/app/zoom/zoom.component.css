@@ -31,3 +31,54 @@ button {
     z-index: 100;
     display: none;
 }
+
+.stars {
+  background-color: white;
+  width: 600px;
+  height: 300px;
+  border: 1px #1bd3da solid;
+  border-radius: 10px;
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 300px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 30px 30px lightgray;
+}
+
+.star-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px;
+}
+
+fa-icon {
+  margin-left: 5px;
+  font-size: 50px;
+  color: lightgray;
+}
+
+fa-icon:hover {
+  color: yellow;
+}
+
+.button {
+  width: 180px;
+  height: 60px;
+  background-color: #1bd3da;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 30px;
+}

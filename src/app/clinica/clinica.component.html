@@ -18,9 +18,9 @@
     <div class="programadas">
       <h5>Citas programadas</h5>
       <div class="list">
-        <div *ngFor="let cita of userDates">
+        <div *ngFor="let cita of userDates; let indice = index">
           <app-date [especialidad]="cita.especialidad" [nombreDoctor]="cita.nombreDoctor" [hora]="cita.hora"
-            [fecha]="cita.fecha" [finalizada]="cita.time" id="{{cita._id}}" [id]="cita._id" (click)="getDate(cita._id)"></app-date>
+            [fecha]="fecha[indice]" [finalizada]="cita.time" id="{{cita._id}}" [id]="cita._id" (click)="getDate(cita._id)"></app-date>
         </div>
       </div>
     </div>

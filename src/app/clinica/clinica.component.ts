@@ -29,7 +29,7 @@ export class ClinicaComponent implements OnInit {
 
   public nombreDoctor = ["Castillo Guerrero Jorge","Gomez Correa Guissela","Barrenechea Quispe Ignacio","Dr. Cadillo Gamero Gustavo","Dra. Herrera Zegarra Maria","Dr. Cortez de la Vega Pedro"];
   hora = '17:05';
-  public fecha = ['18/08/2020','10/08/2020','12/08/2020','15/08/2020','17/08/2020',];
+  public fecha = ['18/09/2020','10/09/2020','12/09/2020','15/09/2020','17/09/2020',];
 
 
   public consultaArray: any[];

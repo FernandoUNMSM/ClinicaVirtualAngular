@@ -7,28 +7,25 @@
 		<div class="formulario">
 			<div class="izquierda">
 				<label for="especialidad">Especialidad*</label>
-				<!-- <input type="text" name="Especialidad" id="" autocomplete="off" required>  -->
 				<mat-form-field >
 					<mat-label>State</mat-label>
-					<mat-select name="select" [(ngModel)]="select">
+					<mat-select name="select" [(ngModel)]="especialidad">
 						<mat-option [value]="0">None</mat-option>
-						<mat-option *ngFor="let state of states; let indices = index" [value]="indices+1" >{{state}}</mat-option>
+						<mat-option *ngFor="let especialidad of especialidades; let indices = index" [value]="indices+1" >{{especialidad}}</mat-option>
 					</mat-select>
 				</mat-form-field>
-					<!-- <p>{{select}}</p> -->
 				<label for="historial">Historial Medico</label>
 				<input type="file" name="historial" id="">
 				<label for="dolor">¿Alergia a medicamento o tratamiento?</label>
-				<input type="number" name="dolor" id="" required>
+				<input type="text" name="dolor" id="" required [(ngModel)]="alergia">
 				<label for="fecha">¿Toma algun medicamento actualmente?</label>
-				<input type="text" name="fecha" id="" autocomplete="off" required>
-				<label for="especialidad">Medicamentos recetados</label>
-				<!-- <input type="text" name="Especialidad" id="" autocomplete="off" required> -->
+				<input type="text" name="fecha" id="" autocomplete="off" required [(ngModel)]="medicamento">
+				<label for="especialidad">¿Desea recibir su receta por correo?</label>
 				<mat-form-field >
 					<mat-label>State</mat-label>
-					<mat-select>
-						<mat-option [value]="0">Originales</mat-option>
-						<mat-option [value]="0">Genericos</mat-option>
+					<mat-select name="email" [(ngModel)]="emailN">
+						<mat-option [value]="0">Si</mat-option>
+						<mat-option [value]="1">No</mat-option>
 					</mat-select>
 				</mat-form-field>
 
@@ -37,18 +34,22 @@
 				<div class="sintomas">
 					<h2>Sintomas (Max. 5)</h2>
 					<div class="sintomas-container" #sintomasContainer>
-						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "0<inputsActual">
-						<fa-icon [icon]="faTrash"*ngIf = "0<inputsActual"></fa-icon>
-						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "1<inputsActual">
-						<fa-icon [icon]="faTrash"*ngIf = "1<inputsActual"></fa-icon>
-						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "2<inputsActual">
-						<fa-icon [icon]="faTrash"*ngIf = "2<inputsActual"></fa-icon>
-						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "3<inputsActual">
-						<fa-icon [icon]="faTrash"*ngIf = "3<inputsActual"></fa-icon>
-						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "4<inputsActual">
-						<fa-icon [icon]="faTrash"*ngIf = "4<inputsActual"></fa-icon>
+						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "0<sintomasLength" class="sintoma">
+						<fa-icon [icon]="faTrash"*ngIf = "0<sintomasLength"></fa-icon>
+
+						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "1<sintomasLength" class="sintoma">
+						<fa-icon [icon]="faTrash"*ngIf = "1<sintomasLength"></fa-icon>
+
+						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "2<sintomasLength" class="sintoma">
+						<fa-icon [icon]="faTrash"*ngIf = "2<sintomasLength"></fa-icon>
+
+						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "3<sintomasLength" class="sintoma">
+						<fa-icon [icon]="faTrash"*ngIf = "3<sintomasLength"></fa-icon>
+						
+						<input type="text" name="sintomas" id="" autocomplete="off" *ngIf = "4<sintomasLength" class="sintoma">
+						<fa-icon [icon]="faTrash"*ngIf = "4<sintomasLength"></fa-icon>
 					</div>
-					<div class="anadirSintoma" #anadirSintoma (click)="sumarSintoma()" *ngIf= " 5>inputsActual">
+					<div class="anadirSintoma" #anadirSintoma (click)="sumarSintoma()" *ngIf= " 5>sintomasLength">
 							<fa-icon [icon]="faPlusCircle"></fa-icon>
 					</div>
 				</div>
@@ -58,6 +59,6 @@
 				</div>
 			</div>
 		</div>
-		<button type="submit" (click)="aviso()">Enviar</button>
+		<button type="submit" (click)="generarConsulta()">Enviar</button>
 	</form>
 </div>

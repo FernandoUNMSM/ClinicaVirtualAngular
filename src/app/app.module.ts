@@ -31,7 +31,6 @@ import { MatSelectModule } from '@angular/material/select';
     ZoomComponent,
     DateInfoComponent,
     DateComponent,
-    // MatSelectModule
   ],
   imports: [
     BrowserModule,

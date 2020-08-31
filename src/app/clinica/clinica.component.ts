@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { faUserAlt } from '@fortawesome/free-solid-svg-icons';
-import { MiServicioService } from '../mi-servicio.service';
-import { ConsultaService } from '../consulta.service';
+import { ConsultaService } from '../services/consulta.service';
+import { UserService } from '../services/user.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-clinica',
@@ -9,119 +10,59 @@ import { ConsultaService } from '../consulta.service';
   styleUrls: ['./clinica.component.css']
 })
 export class ClinicaComponent implements OnInit {
-  // dni = 12345678;
-  // celular = 123456789;
-  // edad = 20;
-  // email = 'test@gmail.com';
 
-  public dni:any;
-  public celular:any;
-  public edad:any;
-  public email:any;
-  public nombre:any;
+  public email: string;
+  public nombre: string;
+  public dni: string;
+
   public usuario:any;
+
   public consulta:any;
-  public consulLength:any;
+
   public especialidad:any;
+
+  public allDates: any;
+  public userDates: any;
+
   public nombreDoctor = ["Castillo Guerrero Jorge","Gomez Correa Guissela","Barrenechea Quispe Ignacio","Dr. Cadillo Gamero Gustavo","Dra. Herrera Zegarra Maria","Dr. Cortez de la Vega Pedro"];
   hora = '17:05';
   public fecha = ['18/08/2020','10/08/2020','12/08/2020','15/08/2020','17/08/2020',];
 
-  public citasProgramadasArray:any;
-  public citasRecientesArray:any;
 
   public consultaArray: any[];
-  constructor(private MiServicioService: MiServicioService, private ConsultaService: ConsultaService) {
-  }
+  constructor(
+    private UserService:UserService,
+    private ConsultaService: ConsultaService,
+    private _route: ActivatedRoute, 
+    private _router: Router, 
+  ) { }
 
   ngOnInit(): void {
-    this.usuario = JSON.parse(localStorage.getItem("nuevoUsuario"));
-    this.consulta = JSON.parse(localStorage.getItem("nuevoConsulta"));
-    this.nombre = this.usuario[0].nombre;
-    this.dni = this.usuario[0].dni;
-    this.email = this.usuario[0].email;
+    this.getAllDates();
 
-    this.citasProgramadasArray = [
-      {
-        especialidad: 'Dermatología',
-        nombreDoctor: 'Jorge Castillo Guerrero',
-        fecha: '18/08/2020',
-        hora: '10:00 AM',
-        finalizada: false
-      },
-      {
-        especialidad: 'Psicología',
-        nombreDoctor: 'Guissela Gomez Correa',
-        fecha: '19/08/2020',
-        hora: '08:00 AM',
-        finalizada: false
-      },
-      {
-        especialidad: 'Pediatria',
-        nombreDoctor: 'Ignacio Barrenechea Quispe',
-        fecha: '20/08/2020',
-        hora: '05:00 PM',
-        finalizada: false
-      },
-      {
-        especialidad: 'Medicina interna',
-        nombreDoctor: 'Gustavo Cadillo Gamero',
-        fecha: '23/08/2020',
-        hora: '09:00 PM',
-        finalizada: false
-      },
-      {
-        especialidad: 'Otorrinolaringología',
-        nombreDoctor: 'Maria Herrera Zegarra',
-        fecha: '25/08/2020',
-        hora: '05:00 PM',
-        finalizada: false
-      }
-    ];
+    let usuarioArrayJson = localStorage.getItem("usuarioActualClinica");
+    this.usuario = JSON.parse(usuarioArrayJson).user;
 
-    this.citasRecientesArray = [
-      {
-        especialidad: 'Medicina interna',
-        nombreDoctor: 'Gustavo Cadillo Gamero',
-        fecha: '29/07/2020',
-        hora: '09:00 PM',
-        finalizada: true
-      },
-      {
-        especialidad: 'Otorrinolaringología',
-        nombreDoctor: 'Maria Herrera Zegarra',
-        fecha: '21/07/2020',
-        hora: '04:30 PM',
-        finalizada: true
-      },
-      {
-        especialidad: 'Pediatria',
-        nombreDoctor: 'Ignacio Barrenechea Quispe',
-        fecha: '20/07/2020',
-        hora: '03:00 PM',
-        finalizada: true
-      },
-      {
-        especialidad: 'Dermatología',
-        nombreDoctor: 'Jorge Castillo Guerrero',
-        fecha: '13/07/2020',
-        hora: '10:00 AM',
-        finalizada: true
-      },
-      {
-        especialidad: 'Psicología',
-        nombreDoctor: 'Guissela Gomez Correa',
-        fecha: '10/07/2020',
-        hora: '08:00 AM',
-        finalizada: true
-      }
-    ];
+    this.nombre = this.usuario.name;
+    this.email = this.usuario.email;
+    this.dni = this.usuario.dni;  
+  }
+  getAllDates(){
+    this.ConsultaService.getAllDates()
+    .subscribe((newUser)=>{
+      this.allDates = JSON.parse(JSON.stringify(newUser)).dates;
+      this.userDates = this.allDates.filter(element => element.user == this.usuario.name);
+    })
+  }
+  getDate(_id:any){
+    console.log(_id);
 
-    // if(this.consulta!=null){
-    //   this.consulLength = Object.keys(this.consulta);
-    // }else{
-    //   this.consulLength =0;
-    // }
+    this.ConsultaService.getDate(_id)
+    .subscribe((newDate)=>{
+      var consultaActual = JSON.stringify(newDate);
+      localStorage.setItem("consultaActual", consultaActual);
+    })
+    this._router.navigate(['/date-info']);
   }
 
   faUserAlt = faUserAlt;

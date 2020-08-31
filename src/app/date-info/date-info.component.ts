@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { faUserAlt, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { HttpClient } from '@angular/common/http';
+import { ConsultaService } from '../services/consulta.service';
+import { jsPDF } from 'jspdf';
 
 @Component({
   selector: 'app-date-info',
@@ -8,60 +10,48 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./date-info.component.css']
 })
 export class DateInfoComponent implements OnInit {
-  especialidad: any;
-  nombre: any;
-  puntuacion: any;
-  universidad: any;
-  tiempoServicio: any;
-  fecha: any;
-  hora: any;
-  finalizada: any;
+  public especialidad: any;
+  public nombre: any;
+  public puntuacion: any;
+  public universidad: any;
+  public tiempoServicio: any;
+  public alergia: any;
+  public medicamento: any;
+  public finalizada: any;
+  public id: string;
 
-  faUserAlt = faUserAlt;
-  faArrowLeft = faArrowLeft;
-
+  public consultaActual: any;
+  public sintomas: any;
   doctorInfoArray: any[] = [];
   doctorInfo: any;
 
-  sintomas: any;
   recomendaciones: any;
 
-  constructor(private http: HttpClient) {
-    const urlParams = new URLSearchParams(window.location.search);
-    const nombreDoctor = urlParams.get('name').replace(/ /g, '%20');
-    const fecha = urlParams.get('date');
-    const hora = urlParams.get('hour');
-    const finalizada = urlParams.get('done');
-    const url = `https://clinica-virtual-api.herokuapp.com/doctors/${nombreDoctor}`;
+  constructor(
+    private http: HttpClient,
+    private ConsultaService: ConsultaService
+    ) {
 
-    this.http.get(url).subscribe(data => {
-      this.doctorInfo = data['doctor'];
-
-      this.especialidad = this.doctorInfo.specialty;
-      this.nombre = this.doctorInfo.name;
-      this.puntuacion = this.doctorInfo.score;
-      this.universidad = this.doctorInfo.university;
-      this.tiempoServicio = this.doctorInfo.years_service;
-    });
-
-    this.fecha = fecha;
-    this.hora = hora;
-    this.finalizada = (finalizada === 'true');
+    this.finalizada = true;
   }
 
   ngOnInit(): void {
-    this.sintomas = [
-      'Dolor en el cuerpo',
-      'Fiebre de 38ºC',
-      'Estornudos constantes',
-      'Flujo nasal'
-    ]
+    this.consultaActual = JSON.parse(localStorage.getItem("consultaActual")).date;
+    console.log(this.consultaActual);
 
-    this.recomendaciones = [
-      'Tomar líquidos calientes',
-      'Evitar cosas frías',
-      'Evitar actividad física',
-    ]
+    this.especialidad = this.consultaActual.especialidad;
+    this.medicamento = this.consultaActual.medicamento;
+    this.alergia = this.consultaActual.alergia;
+    this.sintomas = this.consultaActual.sintomas;
   }
+  generarPDF(){
+    var doc = new jsPDF();
+    doc.text(this.sintomas,20, 20 );
+    doc.text("jola",60,20);
+    doc.save("receta.pdf");
+  }  
 
+  faUserAlt = faUserAlt;
+  faArrowLeft = faArrowLeft;
+  
 }

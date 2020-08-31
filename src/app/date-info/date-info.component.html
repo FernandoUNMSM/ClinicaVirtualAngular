@@ -23,7 +23,7 @@
 			</div>
 		</div>
 
-		<div class="doctor-recomendations" *ngIf="finalizada">
+		<div class="doctor-recomendations">
 			<div class="sintomas">
 				<h5>Sintomas</h5>
 				<br>
@@ -33,7 +33,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="recomendaciones">
+			<div class="recomendaciones" *ngIf="finalizada">
 				<h5>Recomendaciones</h5>
 				<br>
 				<div class="list">
@@ -43,9 +43,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="doctor-recomendations" *ngIf="!finalizada">
+		<!-- <div class="doctor-recomendations" *ngIf="!finalizada">
 			Esta cita todavía no ha sido realizada
-		</div>
+		</div> -->
 	</div>
 
 	<button class="button" *ngIf="finalizada" (click)="generarPDF()">Descargar la receta en PDF</button>

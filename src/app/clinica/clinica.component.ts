@@ -3,6 +3,7 @@ import { faUserAlt } from '@fortawesome/free-solid-svg-icons';
 import { ConsultaService } from '../services/consulta.service';
 import { UserService } from '../services/user.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { element } from 'protractor';
 
 @Component({
   selector: 'app-clinica',
@@ -22,7 +23,9 @@ export class ClinicaComponent implements OnInit {
   public especialidad:any;
 
   public allDates: any;
-  public userDates: any;
+  public userDate: any;
+  public userDates:any;
+  public datesFin: any;
 
   public nombreDoctor = ["Castillo Guerrero Jorge","Gomez Correa Guissela","Barrenechea Quispe Ignacio","Dr. Cadillo Gamero Gustavo","Dra. Herrera Zegarra Maria","Dr. Cortez de la Vega Pedro"];
   hora = '17:05';
@@ -51,7 +54,9 @@ export class ClinicaComponent implements OnInit {
     this.ConsultaService.getAllDates()
     .subscribe((newUser)=>{
       this.allDates = JSON.parse(JSON.stringify(newUser)).dates;
-      this.userDates = this.allDates.filter(element => element.user == this.usuario.name);
+      this.userDate = this.allDates.filter(element => element.user == this.usuario.name);
+      this.userDates = this.userDate.filter(element => element.time == false);
+      this.datesFin = this.userDate.filter(element => element.time == true);
     })
   }
   getDate(_id:any){
@@ -60,8 +65,10 @@ export class ClinicaComponent implements OnInit {
     this.ConsultaService.getDate(_id)
     .subscribe((newDate)=>{
       var consultaActual = JSON.stringify(newDate);
+      // console.log(consultaActual)
       localStorage.setItem("consultaActual", consultaActual);
     })
+    // location.reload();
     this._router.navigate(['/date-info']);
   }
 

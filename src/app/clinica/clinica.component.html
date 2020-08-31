@@ -27,9 +27,9 @@
     <div class="recientes">
       <h5>Citas recientes</h5>
       <div class="list">
-        <!-- <div *ngFor="let cita of citasRecientesArray">
-            <app-date [especialidad]="cita.especialidad" [nombreDoctor]="cita.nombreDoctor" [hora]="cita.hora" [fecha]="cita.fecha" [finalizada]="cita.finalizada"></app-date>
-          </div> -->
+        <div *ngFor="let cita of datesFin">
+            <app-date [especialidad]="cita.especialidad" [nombreDoctor]="cita.nombreDoctor" [hora]="cita.hora" [fecha]="cita.fecha" [finalizada]="cita.finalizada" id="{{cita._id}}" [id]="cita._id" (click)="getDate(cita._id)"></app-date>
+          </div>
       </div>
     </div>
   </div>

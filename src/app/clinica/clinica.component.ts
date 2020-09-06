@@ -3,7 +3,6 @@ import { faUserAlt } from '@fortawesome/free-solid-svg-icons';
 import { ConsultaService } from '../services/consulta.service';
 import { UserService } from '../services/user.service';
 import { Router, ActivatedRoute } from '@angular/router';
-import { element } from 'protractor';
 
 @Component({
   selector: 'app-clinica',

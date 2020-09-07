@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { faUserAlt } from '@fortawesome/free-solid-svg-icons';
-import { ConsultaService } from '../services/consulta.service';
-import { UserService } from '../services/user.service';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Component, OnInit } from "@angular/core";
+import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
+import { ConsultaService } from "../services/consulta.service";
+import { UserService } from "../services/user.service";
+import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
-  selector: 'app-clinica',
-  templateUrl: './clinica.component.html',
-  styleUrls: ['./clinica.component.css']
+  selector: "app-clinica",
+  templateUrl: "./clinica.component.html",
+  styleUrls: ["./clinica.component.css"]
 })
 export class ClinicaComponent implements OnInit {
 
@@ -27,8 +27,8 @@ export class ClinicaComponent implements OnInit {
   public datesFin: any;
 
   public nombreDoctor = ["Castillo Guerrero Jorge","Gomez Correa Guissela","Barrenechea Quispe Ignacio","Dr. Cadillo Gamero Gustavo","Dra. Herrera Zegarra Maria","Dr. Cortez de la Vega Pedro"];
-  hora = '17:05';
-  public fecha = ['18/09/2020','10/09/2020','12/09/2020','15/09/2020','17/09/2020',];
+  hora = "17:05";
+  public fecha = ["18/09/2020","10/09/2020","12/09/2020","15/09/2020","17/09/2020",];
 
 
   public consultaArray: any[];
@@ -67,7 +67,7 @@ export class ClinicaComponent implements OnInit {
       localStorage.setItem("consultaActual", consultaActual);
     });
     // location.reload();
-    this._router.navigate(['/date-info']);
+    this._router.navigate(["/date-info"]);
   }
 
   faUserAlt = faUserAlt;

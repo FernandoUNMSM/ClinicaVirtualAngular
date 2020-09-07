@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { faVideo, faStickyNote, faHome, faPowerOff, faUserAlt } from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit } from "@angular/core";
+import { faVideo, faStickyNote, faHome, faPowerOff, faUserAlt } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  selector: "app-menu",
+  templateUrl: "./menu.component.html",
+  styleUrls: ["./menu.component.css"]
 })
 export class MenuComponent implements OnInit {
 

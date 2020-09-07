@@ -1,10 +1,10 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
-  selector: 'app-zoom',
-  templateUrl: './zoom.component.html',
-  styleUrls: ['./zoom.component.css']
+  selector: "app-zoom",
+  templateUrl: "./zoom.component.html",
+  styleUrls: ["./zoom.component.css"]
 })
 export class ZoomComponent implements OnInit {
 

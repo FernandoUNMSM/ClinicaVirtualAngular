@@ -1,4 +1,4 @@
-*{
+* {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -8,7 +8,7 @@
   height: 100vh;
 }
 
-.formulario-container .titulo h1{
+.formulario-container .titulo h1 {
   padding: 40px 0 70px;
   margin-left: 70px;
   color: #1BD3DA;
@@ -22,17 +22,18 @@
   margin-bottom: 60px;
 }
 
-.formulario-container .formulario>div {
+.formulario-container .formulario > div {
   width: 500px;
 }
 
-.formulario-container .formulario .izquierda{
+.formulario-container .formulario .izquierda {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(5,100px);
 }
 
-.formulario-container .formulario input, .formulario-container .formulario textarea {
+.formulario-container .formulario input, 
+.formulario-container .formulario textarea {
   padding: 10px 5px;
 }
 
@@ -55,7 +56,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-.formulario-container .formulario .derecha{
+.formulario-container .formulario .derecha {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,12 +71,12 @@ input[type=number]::-webkit-outer-spin-button {
   cursor: pointer;
 }
 
-.formulario-container .formulario .derecha>div{
+.formulario-container .formulario .derecha>div {
  width: 100%;
  margin-bottom: 30px;
 }
 
-.formulario-container .formulario .derecha h2{
+.formulario-container .formulario .derecha h2 {
   text-align: center;
   margin-bottom: 20px;
 
@@ -108,7 +109,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: block;
   margin: auto;
   padding: 10px 45px;
-  background-color: #1BD3DA;
+  background-color: #1bd3da;
   border: none;
   outline: none;
   color: white;
@@ -116,7 +117,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-.formulario-container .formulario .derecha .sintomas .anadirSintoma{
+.formulario-container .formulario .derecha .sintomas .anadirSintoma {
   height: 30px;
   border-radius: 10px;
   border: 2px dashed #8d8f8f;
@@ -126,7 +127,7 @@ input[type=number]::-webkit-outer-spin-button {
   cursor: pointer;
 }
 
-.inputJs{
+.inputJs {
   background-color: #000;
 }
 

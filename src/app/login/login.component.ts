@@ -1,12 +1,12 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { faUserAlt, faLock, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { Router, ActivatedRoute } from '@angular/router';
-import { UserService } from '../services/user.service';
+import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
+import { faUserAlt, faLock, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { Router, ActivatedRoute } from "@angular/router";
+import { UserService } from "../services/user.service";
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: "app-login",
+  templateUrl: "./login.component.html",
+  styleUrls: ["./login.component.css"]
 })
 export class LoginComponent implements OnInit {
   @ViewChild("login") login:ElementRef;
@@ -39,15 +39,15 @@ export class LoginComponent implements OnInit {
   }
 
   abrirRegistro(){
-    this.registro.nativeElement.classList.add('registroActive');
-    this.login.nativeElement.classList.add('loginOff');
-    this.line.nativeElement.classList.add('lineActive');
+    this.registro.nativeElement.classList.add("registroActive");
+    this.login.nativeElement.classList.add("loginOff");
+    this.line.nativeElement.classList.add("lineActive");
   }
 
   abrirLogin(){
-    this.registro.nativeElement.classList.remove('registroActive');
-    this.login.nativeElement.classList.remove('loginOff');
-    this.line.nativeElement.classList.remove('lineActive');
+    this.registro.nativeElement.classList.remove("registroActive");
+    this.login.nativeElement.classList.remove("loginOff");
+    this.line.nativeElement.classList.remove("lineActive");
   }
 
   createUser(){
@@ -62,7 +62,7 @@ export class LoginComponent implements OnInit {
       // console.log(newUser);
       let usuarioArray = JSON.stringify(newUser);
       localStorage.setItem("usuarioActualClinica", usuarioArray);
-      this._router.navigate(['/clinica']);
+      this._router.navigate(["/clinica"]);
     });
   }
   getUser(){
@@ -76,7 +76,7 @@ export class LoginComponent implements OnInit {
       let usuarioArray = JSON.stringify(newUser);
       // let usuarioArrayJson = JSON.parse(usuarioArray);
       localStorage.setItem("usuarioActualClinica", usuarioArray);
-      this._router.navigate(['/clinica']);
+      this._router.navigate(["/clinica"]);
     });
   }
 

@@ -1,13 +1,13 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { text } from '@fortawesome/fontawesome-svg-core';
-import { faPlusCircle, faTrash } from '@fortawesome/free-solid-svg-icons';
-import { element } from 'protractor';
-import { ConsultaService } from '../services/consulta.service';
+import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
+import { text } from "@fortawesome/fontawesome-svg-core";
+import { faPlusCircle, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { element } from "protractor";
+import { ConsultaService } from "../services/consulta.service";
 
 @Component({
-  selector: 'app-formulario',
-  templateUrl: './formulario.component.html',
-  styleUrls: ['./formulario.component.css']
+  selector: "app-formulario",
+  templateUrl: "./formulario.component.html",
+  styleUrls: ["./formulario.component.css"]
 })
 export class FormularioComponent implements OnInit {
   @ViewChild("anadirSintoma") anadirSintoma: ElementRef;
@@ -32,7 +32,7 @@ export class FormularioComponent implements OnInit {
     private consultaService: ConsultaService
   ) {
     this.sintomaActual = 1;
-    this.especialidades = ['Ginecologia', 'Oftalmologia', 'Cardiologia', 'Dermatologia', 'Endocrinologia', 'Gastroenterologia', 'Geriatria', 'Hematologia', 'Medicina General', 'Odontologia', 'Pediatria', 'Radiologia', 'Urologia', 'Traumatologia'];
+    this.especialidades = ["Ginecologia", "Oftalmologia", "Cardiologia", "Dermatologia", "Endocrinologia", "Gastroenterologia", "Geriatria", "Hematologia", "Medicina General", "Odontologia", "Pediatria", "Radiologia", "Urologia", "Traumatologia"];
   }
 
   ngOnInit(): void {
@@ -50,7 +50,7 @@ export class FormularioComponent implements OnInit {
 
   generarConsulta() {
     this.email = (this.emailN == 0) ? true : false;
-    var sintomas = [...this.elem.nativeElement.querySelectorAll('.sintoma')];
+    var sintomas = [...this.elem.nativeElement.querySelectorAll(".sintoma")];
     this.sintomasText = sintomas.map(element => element.value);
 
 

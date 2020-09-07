@@ -23,7 +23,7 @@ button {
   cursor: pointer;
 }
 
-.puntuar-container{
+.puntuar-container {
   height: 100vh;
   width: calc(100% - 170px);
   right: 0;

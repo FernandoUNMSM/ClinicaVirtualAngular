@@ -490,7 +490,7 @@ export class DoctoresComponent implements OnInit {
         this.logoContainer.nativeElement.classList.remove('logo-on');
       }
     }
-    console.log(this.doctores)
+    // console.log(this.doctores)
   }
 
   ngAfterViewInit() {

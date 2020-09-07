@@ -56,17 +56,16 @@ export class ClinicaComponent implements OnInit {
       this.userDate = this.allDates.filter(element => element.user == this.usuario.name);
       this.userDates = this.userDate.filter(element => element.time == false);
       this.datesFin = this.userDate.filter(element => element.time == true);
-    })
+    });
   }
   getDate(_id:any){
-    console.log(_id);
-
+    // console.log(_id);
     this.ConsultaService.getDate(_id)
     .subscribe((newDate)=>{
       var consultaActual = JSON.stringify(newDate);
       // console.log(consultaActual)
       localStorage.setItem("consultaActual", consultaActual);
-    })
+    });
     // location.reload();
     this._router.navigate(['/date-info']);
   }

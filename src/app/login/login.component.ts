@@ -56,20 +56,20 @@ export class LoginComponent implements OnInit {
       email: this.email,
       password: this.password,
       dni: this.dni
-    }
+    };
     this.UserService.createUser(user)
     .subscribe((newUser)=>{
-      console.log(newUser);
+      // console.log(newUser);
       let usuarioArray = JSON.stringify(newUser);
       localStorage.setItem("usuarioActualClinica", usuarioArray);
       this._router.navigate(['/clinica']);
-    })
+    });
   }
   getUser(){
     const user = {
       email: this.emailL,
       password: this.passwordL
-    }
+    };
     this.UserService.getUser(user)
     .subscribe((newUser)=>{
       // console.log(newUser);
@@ -77,7 +77,7 @@ export class LoginComponent implements OnInit {
       // let usuarioArrayJson = JSON.parse(usuarioArray);
       localStorage.setItem("usuarioActualClinica", usuarioArray);
       this._router.navigate(['/clinica']);
-    })
+    });
   }
 
   faUserAlt = faUserAlt;

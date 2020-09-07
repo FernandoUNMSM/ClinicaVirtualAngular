@@ -1,35 +1,35 @@
 :host {
-    overflow: hidden;
+  overflow: hidden;
 }
 .consulta-container {
-    margin-left: 170px;
-    width: calc(100% - 170px);
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+  margin-left: 170px;
+  width: calc(100% - 170px);
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 button {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    padding: 10px 30px;
-    outline: none;
-    border: none;
-    background-color: rgb(199, 21, 21);
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+  background-color: rgb(199, 21, 21);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
 }
 
 .puntuar-container{
-    height: 100vh;
-    width: calc(100% - 170px);
-    right: 0;
-    position: absolute;
-    top: 0;
-    background-color: #fff;
-    z-index: 100;
-    display: none;
+  height: 100vh;
+  width: calc(100% - 170px);
+  right: 0;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  display: none;
 }
 
 .stars {

@@ -41,15 +41,15 @@ export class HomeComponent implements OnInit {
 
     const headers = this.elem.nativeElement.querySelectorAll(".headers");
     var i = 0;
-    setInterval(() => {
-      headers[i].style.visibility = "hidden";
-      headers[i].style.opacity = "0";
+    // setInterval(() => {
+    //   headers[i].style.visibility = "hidden";
+    //   headers[i].style.opacity = "0";
 
-      i = (i + 1) % headers.length;
+    //   i = (i + 1) % headers.length;
 
-      headers[i].style.visibility = "visible";
-      headers[i].style.opacity = "1";
-    }, 4000);
+    //   headers[i].style.visibility = "visible";
+    //   headers[i].style.opacity = "1";
+    // }, 4000);
   }
 
   ngAfterViewInit() {

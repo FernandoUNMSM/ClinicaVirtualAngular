@@ -46,7 +46,6 @@ export class FormularioComponent implements OnInit {
     if(this.sintomasLength<5){
       this.sintomasLength++;
     }
-
   }
 
   generarConsulta() {
@@ -63,16 +62,13 @@ export class FormularioComponent implements OnInit {
       sintomas: this.sintomasText,
       user: this.user,
       time: this.time,
-    }
-    console.log(consulta);
+    };
+    // console.log(consulta);
     this.consultaService.createDate(consulta)
     .subscribe((newDate)=>{
-      console.log(newDate);
-    })
+      // console.log(newDate);
+    });
   }
-
-
-
 
   faPlusCircle = faPlusCircle;
   faTrash = faTrash;

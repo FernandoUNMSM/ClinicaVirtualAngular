@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
 
-import { User } from './../interfaces/user';
+import { User } from "./../interfaces/user";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class UserService {
 
@@ -13,12 +13,12 @@ export class UserService {
     ) { }
 
   createUser(user: User){
-    const path = 'https://bicicletas-api.herokuapp.com/register';
+    const path = "https://bicicletas-api.herokuapp.com/register";
     return this.http.post(path, user);
   }
 
   getUser(user: User){
-    const path2 = 'https://bicicletas-api.herokuapp.com/login';
+    const path2 = "https://bicicletas-api.herokuapp.com/login";
     return this.http.post(path2, user);
   }
 }

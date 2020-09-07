@@ -1,9 +1,9 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Consulta } from './../interfaces/consulta';
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { Consulta } from "./../interfaces/consulta";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class ConsultaService {
 
@@ -12,12 +12,12 @@ export class ConsultaService {
   ) { }
   
   createDate(consulta: Consulta){
-    const path = 'https://bicicletas-api.herokuapp.com/calidad/dates';
+    const path = "https://bicicletas-api.herokuapp.com/calidad/dates";
     return this.http.post(path, consulta);
   }
 
   getAllDates(){
-    const path2 = 'https://bicicletas-api.herokuapp.com/calidad/dates';
+    const path2 = "https://bicicletas-api.herokuapp.com/calidad/dates";
     return this.http.get(path2);
   }
   getDate(id: string){

@@ -1,6 +1,7 @@
 :host {
   overflow: hidden;
 }
+
 .consulta-container {
   margin-left: 170px;
   width: calc(100% - 170px);
@@ -8,6 +9,7 @@
   overflow: hidden;
   position: relative;
 }
+
 button {
   position: absolute;
   bottom: 10px;

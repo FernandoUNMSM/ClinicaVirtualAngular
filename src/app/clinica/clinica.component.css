@@ -1,6 +1,7 @@
 * {
   font-family: "Poppins", sans-serif;
-} 
+}
+
 .profile-container {
   margin-left: 170px;
   width: calc(100% - 170px);
@@ -9,6 +10,7 @@
   justify-content: space-evenly;
   align-items: center;
 } 
+
 .profile {
   height: 75%;
   width: 400px;
@@ -19,15 +21,18 @@
   align-items: center;
   justify-content: center;
 }
+
 .profile-img {
   width: fit-content;
   height: fit-content;
   font-size: 100px;
 }  
+
 .info {
   margin: 15% 0;
   width: 80%;
 }  
+
 .button {
   width: 180px;
   height: 60px;
@@ -39,6 +44,7 @@
   border-radius: 10px;
   margin-bottom: 20px;
 }   
+
 .dates {
   height: 85%;
   width: 55%;
@@ -47,9 +53,11 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .dates h5 {
   font-size: 15px;
 }
+
 .programadas, .recientes {
   height: 45%;
   width: 100%;
@@ -57,6 +65,7 @@
   border-radius: 10px;
   padding: 10px;
 }  
+
 .list {
   width: 95%;
   height: calc(100% - 13px);
@@ -66,13 +75,16 @@
   margin: 0 auto;
   overflow: auto;
 }  
+
 ::-webkit-scrollbar {
   display: none;
 }
+
 a {
   color: black;
   text-decoration: none;
 }  
+
 .container {
   width: 100%;
   height: 60px;
@@ -86,6 +98,7 @@ a {
   align-items: center;
   cursor: pointer;
 }  
+
 .derecha {
   display: flex;
   flex-direction: column;

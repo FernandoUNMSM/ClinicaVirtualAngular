@@ -8,9 +8,11 @@
   align-items: center;
   flex-direction: column;
 }
+
 *{
   transition: .3s;
 }
+
 .login-container {
   height: 400px;
   width: 500px;
@@ -25,11 +27,13 @@
   position: relative;
   margin-bottom: 40px;
 }
+
 .login-container .tabs {
   display: flex;
   width: 100%;
   position: relative;
 }
+
 .login-container .tabs .line {
   display: block;
   height: 2px;
@@ -39,6 +43,7 @@
   bottom: 0;
   background-color: rgb(27, 211, 218);
 }
+
 .login-container .tabs .line.lineActive {
   transform: translateX(100%);
 }
@@ -55,6 +60,7 @@
   font-family:'Poppins', sans-serif;
   cursor: pointer;
 }
+
 .login-container .loginBody  {
   display: flex;
   flex-direction: row;
@@ -63,20 +69,24 @@
   width: 100%;
   height: 100%;
 }
+
 .login-container .loginBody > div {
   width: 100%;
   transition: .3s;
   padding: 20px 30px ;
   height: fit-content;
 }
+
 .login-container .loginBody form{
   text-align: center;
 }
+
 
 .login-container .loginBody .registro{
   right: -100%;
   position: absolute;
 }
+
 .login-container .loginBody input{
   width: 60%;
   margin: auto;
@@ -88,10 +98,11 @@
   border: 2px solid rgb(35, 216, 223);
   color: black;
 }
+
 .login-container .loginBody input:focus{
-  /* border: 2px solid rgb(35, 216, 223); */
   width: 70%;
 }
+
 .login-container .loginBody button{
   height: 35px;
   padding: 0 30px;
@@ -110,6 +121,7 @@
   flex-direction: column;
   color: rgb(35, 216, 223);
 }
+
 .login-container .loginBody .uc label{
   font-family: 'Poppins', sans-serif;
   margin-bottom: 5px;
@@ -120,22 +132,27 @@
   transform: translateX(-100%);
 
 }
+
 .loginOff{
   transform: translateX(-100%);
 }
+
 .login-container .loginBody .registro .uc{
   margin-bottom: 20px;
 }
+
 .returnHome {
   background-color: #fff;
   padding: 15px 0;
 }
+
 .returnHome a{
   text-decoration: none;
   padding: 20px 50px;
   font-family: 'Poppins', sans-serif;
   color: rgb(35, 216, 223);
 }
+
 .incorrecto-container {
   background-color: rgba(0, 0, 0, .4);
   width: 100%;
@@ -143,6 +160,7 @@
   position: absolute;
   display: none;
 }
+
 .incorrecto {
   width: 500px;
   height: 400px;
@@ -154,15 +172,18 @@
   text-align: center;
   flex-direction: column;
 }
+
 .incorrecto fa-icon{
   font-size: 200px;
   color: rgb(35, 216, 223);
 }
+
 .incorrecto h1{
   color: rgb(35, 216, 223);
   margin-top: 25px;
   font-family: 'Poppins', sans-serif;
 }
+
 .incorrecto button {
   width: 200px;
   margin: auto;
@@ -174,5 +195,3 @@
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
 }
-
-

@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { DateInfoComponent } from './date-info.component';
+import { DateInfoComponent } from "./date-info.component";
 
-describe('DateInfoComponent', () => {
+describe("DateInfoComponent", () => {
   let component: DateInfoComponent;
   let fixture: ComponentFixture<DateInfoComponent>;
 
@@ -18,8 +18,9 @@ describe('DateInfoComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
+  
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

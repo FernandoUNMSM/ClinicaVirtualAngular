@@ -51,17 +51,17 @@ export class ClinicaComponent implements OnInit {
   }
   getAllDates(){
     this.ConsultaService.getAllDates()
-    .subscribe((newUser)=>{
+    .subscribe((newUser) => {
       this.allDates = JSON.parse(JSON.stringify(newUser)).dates;
-      this.userDate = this.allDates.filter(element => element.user == this.usuario.name);
-      this.userDates = this.userDate.filter(element => element.time == false);
-      this.datesFin = this.userDate.filter(element => element.time == true);
+      this.userDate = this.allDates.filter(element => element.user === this.usuario.name);
+      this.userDates = this.userDate.filter(element => element.time === false);
+      this.datesFin = this.userDate.filter(element => element.time === true);
     });
   }
   getDate(_id:any){
     // console.log(_id);
     this.ConsultaService.getDate(_id)
-    .subscribe((newDate)=>{
+    .subscribe((newDate) => {
       var consultaActual = JSON.stringify(newDate);
       // console.log(consultaActual)
       localStorage.setItem("consultaActual", consultaActual);

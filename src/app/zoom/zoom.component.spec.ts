@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { ZoomComponent } from './zoom.component';
+import { ZoomComponent } from "./zoom.component";
 
-describe('ZoomComponent', () => {
+describe("ZoomComponent", () => {
   let component: ZoomComponent;
   let fixture: ComponentFixture<ZoomComponent>;
 
@@ -19,7 +19,7 @@ describe('ZoomComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

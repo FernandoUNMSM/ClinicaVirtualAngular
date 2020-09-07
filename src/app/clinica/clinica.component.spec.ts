@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { ClinicaComponent } from './clinica.component';
+import { ClinicaComponent } from "./clinica.component";
 
-describe('ClinicaComponent', () => {
+describe("ClinicaComponent", () => {
   let component: ClinicaComponent;
   let fixture: ComponentFixture<ClinicaComponent>;
 
@@ -19,7 +19,7 @@ describe('ClinicaComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

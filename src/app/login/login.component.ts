@@ -58,7 +58,7 @@ export class LoginComponent implements OnInit {
       dni: this.dni
     };
     this.UserService.createUser(user)
-    .subscribe((newUser)=>{
+    .subscribe((newUser) => {
       // console.log(newUser);
       let usuarioArray = JSON.stringify(newUser);
       localStorage.setItem("usuarioActualClinica", usuarioArray);
@@ -71,7 +71,7 @@ export class LoginComponent implements OnInit {
       password: this.passwordL
     };
     this.UserService.getUser(user)
-    .subscribe((newUser)=>{
+    .subscribe((newUser) => {
       // console.log(newUser);
       let usuarioArray = JSON.stringify(newUser);
       // let usuarioArrayJson = JSON.parse(usuarioArray);

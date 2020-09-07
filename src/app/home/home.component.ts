@@ -66,7 +66,7 @@ export class HomeComponent implements OnInit {
     window.onresize = () => {
       this.innerWidth = window.innerWidth;
       if (this.innerWidth <= "1000") {
-        if (j == 0) {
+        if (j === 0) {
           footerResponsive.appendChild(this.footerInfo.nativeElement);
           footerResponsive.appendChild(this.footerContact.nativeElement);
           this.footerMain.nativeElement.appendChild(footerResponsive);

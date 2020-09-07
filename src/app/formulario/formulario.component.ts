@@ -49,7 +49,7 @@ export class FormularioComponent implements OnInit {
   }
 
   generarConsulta() {
-    this.email = (this.emailN == 0) ? true : false;
+    this.email = (this.emailN === 0) ? true : false;
     var sintomas = [...this.elem.nativeElement.querySelectorAll(".sintoma")];
     this.sintomasText = sintomas.map(element => element.value);
 
@@ -65,7 +65,7 @@ export class FormularioComponent implements OnInit {
     };
     // console.log(consulta);
     this.consultaService.createDate(consulta)
-    .subscribe((newDate)=>{
+    .subscribe((newDate) => {
       // console.log(newDate);
     });
   }

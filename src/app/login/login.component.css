@@ -9,8 +9,8 @@
   flex-direction: column;
 }
 
-*{
-  transition: .3s;
+* {
+  transition: 0.3s;
 }
 
 .login-container {
@@ -19,8 +19,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  /* background-color: rgb(41, 37, 37); */
   background-color: white;
   color: white;
   overflow: hidden;
@@ -37,7 +35,7 @@
 .login-container .tabs .line {
   display: block;
   height: 2px;
-  transition: .3s;
+  transition: 0.3s;
   width: 50%;
   position: absolute;
   bottom: 0;
@@ -52,7 +50,6 @@
   width: 50%;
   border: none;
   outline: none;
-  /* background-color: rgb(41, 37, 37); */
   background-color: white;
   color: black;
   height: 50px;
@@ -72,22 +69,22 @@
 
 .login-container .loginBody > div {
   width: 100%;
-  transition: .3s;
+  transition: 0.3s;
   padding: 20px 30px ;
   height: fit-content;
 }
 
-.login-container .loginBody form{
+.login-container .loginBody form {
   text-align: center;
 }
 
 
-.login-container .loginBody .registro{
+.login-container .loginBody .registro {
   right: -100%;
   position: absolute;
 }
 
-.login-container .loginBody input{
+.login-container .loginBody input {
   width: 60%;
   margin: auto;
   height: 35px;
@@ -99,11 +96,11 @@
   color: black;
 }
 
-.login-container .loginBody input:focus{
+.login-container .loginBody input:focus {
   width: 70%;
 }
 
-.login-container .loginBody button{
+.login-container .loginBody button {
   height: 35px;
   padding: 0 30px;
   color: white;
@@ -114,7 +111,7 @@
   cursor: pointer;
 }
 
-.login-container .loginBody .uc{
+.login-container .loginBody .uc {
   display: flex;
   margin-bottom: 40px;
   justify-content: space-between;
@@ -122,22 +119,22 @@
   color: rgb(35, 216, 223);
 }
 
-.login-container .loginBody .uc label{
+.login-container .loginBody .uc label {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 5px;
 
 }
 
-.registroActive{
+.registroActive {
   transform: translateX(-100%);
 
 }
 
-.loginOff{
+.loginOff {
   transform: translateX(-100%);
 }
 
-.login-container .loginBody .registro .uc{
+.login-container .loginBody .registro .uc {
   margin-bottom: 20px;
 }
 
@@ -146,7 +143,7 @@
   padding: 15px 0;
 }
 
-.returnHome a{
+.returnHome a {
   text-decoration: none;
   padding: 20px 50px;
   font-family: 'Poppins', sans-serif;
@@ -154,7 +151,7 @@
 }
 
 .incorrecto-container {
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -173,12 +170,12 @@
   flex-direction: column;
 }
 
-.incorrecto fa-icon{
+.incorrecto fa-icon {
   font-size: 200px;
   color: rgb(35, 216, 223);
 }
 
-.incorrecto h1{
+.incorrecto h1 {
   color: rgb(35, 216, 223);
   margin-top: 25px;
   font-family: 'Poppins', sans-serif;

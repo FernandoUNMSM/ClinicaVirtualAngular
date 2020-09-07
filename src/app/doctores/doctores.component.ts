@@ -26,7 +26,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "12",
       puntuacion: "3.7/5",
       cmp: "42363",
-      img_url: "1.jpg"
+      imgUrl: "1.jpg"
     },
     {
       nombre: "Gomez Correa Guissela",
@@ -35,7 +35,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "7",
       puntuacion: "4.2/5",
       cmp: "079072",
-      img_url: "2.jpg"
+      imgUrl: "2.jpg"
     },
     {
       nombre: "Barrenechea Quispe Ignacio",
@@ -44,7 +44,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "5",
       puntuacion: "4.7/5",
       cmp: "071538",
-      img_url: "3.jpg"
+      imgUrl: "3.jpg"
     },
     {
       nombre: "Dr. Cadillo Gamero Gustavo",
@@ -53,7 +53,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "3",
       puntuacion: "2.6 / 5",
       cmp: "49526",
-      img_url: "4.jpg"
+      imgUrl: "4.jpg"
     },
     {
       nombre: "Dra. Herrera Zegarra Maria",
@@ -62,7 +62,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "15",
       puntuacion: "4.0 / 5",
       cmp: "25015",
-      img_url: "5.jpg"
+      imgUrl: "5.jpg"
     },
     {
       nombre: "Dr. Cortez de la Vega Pedro",
@@ -71,7 +71,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "4",
       puntuacion: "2.1 / 5",
       cmp: "051657",
-      img_url: "6.jpg"
+      imgUrl: "6.jpg"
     },
     {
       nombre: "Dr. Chupitaz Segovia Vito",
@@ -80,7 +80,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "22",
       puntuacion: "4.7 / 5",
       cmp: "067652",
-      img_url: "7.jpg"
+      imgUrl: "7.jpg"
     },
     {
       nombre: "Dra. Quiroz Bautista Elena",
@@ -89,7 +89,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "7",
       puntuacion: "3.2 / 5",
       cmp: "035403",
-      img_url: "12.jpg"
+      imgUrl: "12.jpg"
     },
     {
       nombre: "Dr. Gutierrez Zea Mauricio",
@@ -98,7 +98,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "3",
       puntuacion: "2.4 / 5",
       cmp: "061241",
-      img_url: "8.jpg"
+      imgUrl: "8.jpg"
     },
     {
       nombre: "Dra. Delgado Cabrera Scarlet",
@@ -107,7 +107,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "2",
       puntuacion: "3.0 / 5",
       cmp: "033871",
-      img_url: "13.jpg"
+      imgUrl: "13.jpg"
     },
     {
       nombre: "Luis Izquierdo Jr.",
@@ -116,7 +116,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "12",
       puntuacion: "4.5/ 5",
       cmp: "076150",
-      img_url: "9.jpg"
+      imgUrl: "9.jpg"
     },
     {
       nombre: "Luis Izquierdo Vásquez",
@@ -125,7 +125,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "25",
       puntuacion: "5/ 5",
       cmp: "38801",
-      img_url: "10.jpg"
+      imgUrl: "10.jpg"
     },
     {
       nombre: "Juan Carloz Izquiero",
@@ -134,7 +134,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "15",
       puntuacion: "4.9/ 5",
       cmp: "30852",
-      img_url: "11.jpg"
+      imgUrl: "11.jpg"
     },
     {
       nombre: "María Alejandra Henríquez",
@@ -143,7 +143,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "10",
       puntuacion: "4.8/ 5",
       cmp: "38601",
-      img_url: "17.jpg"
+      imgUrl: "17.jpg"
     },
     {
       nombre: "Renzo Cañete",
@@ -152,7 +152,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "7",
       puntuacion: "4/ 5",
       cmp: "52700",
-      img_url: "14.jpg"
+      imgUrl: "14.jpg"
     },
     {
       nombre: "Luis Izquierdo Vásquez",
@@ -161,7 +161,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "12",
       puntuacion: "4.9/ 5",
       cmp: "34421",
-      img_url: "15.jpg"
+      imgUrl: "15.jpg"
     },
     {
       nombre: "Ramiro Rojas",
@@ -170,7 +170,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "17",
       puntuacion: "4.9/ 5",
       cmp: "44848",
-      img_url: "16.jpg"
+      imgUrl: "16.jpg"
     },
     {
       nombre: "Luis Izquierdo Vásquez",
@@ -179,7 +179,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "12",
       puntuacion: "4.9/ 5",
       cmp: "43598",
-      img_url: "19.jpg"
+      imgUrl: "19.jpg"
     },
     {
       nombre: "Marcela Abarca Benavente",
@@ -188,7 +188,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "11",
       puntuacion: "3.8/ 5",
       cmp: "079804",
-      img_url: "18.jpg"
+      imgUrl: "18.jpg"
     },
     {
       nombre: "Max Carlos Acosta Chacaltana",
@@ -197,7 +197,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "19",
       puntuacion: "4.7/ 5",
       cmp: "036208",
-      img_url: "20.jpg"
+      imgUrl: "20.jpg"
     },
     {
       nombre: "Jorge Mario Alarcon Piana",
@@ -206,7 +206,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "13",
       puntuacion: "4.3/ 5",
       cmp: "023670",
-      img_url: "21.jpg"
+      imgUrl: "21.jpg"
     },
     {
       nombre: "Jose Samuel Alarcon Vera",
@@ -215,7 +215,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "16",
       puntuacion: "4.4/ 5",
       cmp: "045225",
-      img_url: "22.jpg"
+      imgUrl: "22.jpg"
     },
     {
       nombre: "Alfredo Aller Fernandini",
@@ -224,7 +224,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "17",
       puntuacion: "4/ 5",
       cmp: "030185",
-      img_url: "23.jpg"
+      imgUrl: "23.jpg"
     },
     {
       nombre: "Edgar Eduardo Alva Alva",
@@ -233,7 +233,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "12",
       puntuacion: "4.8/ 5",
       cmp: "012649",
-      img_url: "24.jpg"
+      imgUrl: "24.jpg"
     },
     {
       nombre: "Aldo David Alvarado Hinojosa",
@@ -242,7 +242,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "14",
       puntuacion: "4.9/ 5",
       cmp: "042576",
-      img_url: "26.jpg"
+      imgUrl: "26.jpg"
     },
     {
       nombre: "Leoncio Eduardo Amador Acosta",
@@ -251,7 +251,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "17",
       puntuacion: "4.6/ 5",
       cmp: "027797",
-      img_url: "27.jpg"
+      imgUrl: "27.jpg"
     },
     {
       nombre: "Henry Alexander Anchante Hernandez",
@@ -260,7 +260,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "14",
       puntuacion: "4.3/ 5",
       cmp: "019077",
-      img_url: "28.jpg"
+      imgUrl: "28.jpg"
     },
     {
       nombre: "Daniel Marcos Angulo Chocano",
@@ -269,7 +269,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "12",
       puntuacion: "4.9/ 5",
       cmp: "037634",
-      img_url: "29.jpg"
+      imgUrl: "29.jpg"
     },
     {
       nombre: "Alberto Eduardo Arias Castratt",
@@ -278,7 +278,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "119",
       puntuacion: "4.8/ 5",
       cmp: "026736",
-      img_url: "30.png"
+      imgUrl: "30.png"
     },
     {
       nombre: "Graciela Claudia Karina Artica Aguirre",
@@ -287,7 +287,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "16",
       puntuacion: "4.7/ 5",
       cmp: "017652",
-      img_url: "25.jpg"
+      imgUrl: "25.jpg"
     },
     {
       nombre: "Mauricio Bassino Pinasco",
@@ -296,7 +296,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "15",
       puntuacion: "3.8/ 5",
       cmp: "033447",
-      img_url: "31.jpg"
+      imgUrl: "31.jpg"
     },
     {
       nombre: "Carmen Liliana Bendezu Injante",
@@ -305,7 +305,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "12",
       puntuacion: "4.9/ 5",
       cmp: "021249",
-      img_url: "34.jpg"
+      imgUrl: "34.jpg"
     },
     {
       nombre: "Wilfredo Beethoven Beltran Guevara",
@@ -314,7 +314,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "14",
       puntuacion: "4.3/ 5",
       cmp: "037214",
-      img_url: "32.png"
+      imgUrl: "32.png"
     },
     {
       nombre: "Abuid Ticona, Juan",
@@ -323,7 +323,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "21",
       puntuacion: "4.9/ 5",
       cmp: "039699",
-      img_url: "33.jpg"
+      imgUrl: "33.jpg"
     },
     {
       nombre: "Acevedo Tizon, Anaïs Caterina",
@@ -332,7 +332,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "17",
       puntuacion: "4.7/ 5",
       cmp: "09944",
-      img_url: "35.png"
+      imgUrl: "35.png"
     },
     {
       nombre: "Acha Sanchéz, José Luis",
@@ -341,7 +341,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "15",
       puntuacion: "4.2/ 5",
       cmp: "60449",
-      img_url: "36.jpg"
+      imgUrl: "36.jpg"
     },
     {
       nombre: "Achata Arenas, Jorge Hernan",
@@ -350,7 +350,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "25",
       puntuacion: "5/ 5",
       cmp: "44485",
-      img_url: "37.jpg"
+      imgUrl: "37.jpg"
     },
     {
       nombre: "Acosta Galli, María Ysabel",
@@ -359,7 +359,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "23",
       puntuacion: "4.3/ 5",
       cmp: "09114",
-      img_url: "38.jpg"
+      imgUrl: "38.jpg"
     },
     {
       nombre: "Aguilar Del Rosario, Clemente Luis",
@@ -368,7 +368,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "23",
       puntuacion: "4.9/ 5",
       cmp: "19052",
-      img_url: "39.png"
+      imgUrl: "39.png"
     },
     {
       nombre: "Aguilar Rivera, William",
@@ -377,7 +377,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "15",
       puntuacion: "4.4/ 5",
       cmp: "13818",
-      img_url: "40.jpg"
+      imgUrl: "40.jpg"
     },
     // {
     //   nombre: "Alania Chávez, Paul Francis",
@@ -386,7 +386,7 @@ export class DoctoresComponent implements OnInit {
     //   anosServicio: "14",
     //   puntuacion: "4.3/ 5",  
     //   cmp: "30030",
-    //   img_url: ".jpg"
+    //   imgUrl: ".jpg"
     // },
     {
       nombre: "Bustos Arévalo, María Del Pilar",
@@ -395,7 +395,7 @@ export class DoctoresComponent implements OnInit {
       anosServicio: "23",
       puntuacion: "4.9/ 5",
       cmp: "40767",
-      img_url: "41.jpg"
+      imgUrl: "41.jpg"
     },
     //{
     //   nombre: "Alejos Silva, Cesar Augusto",
@@ -404,7 +404,7 @@ export class DoctoresComponent implements OnInit {
     //   anosServicio: "11",
     //   puntuacion: "4/ 5",
     //   cmp: "26494",
-    //   img_url: ".jpg"
+    //   imgUrl: ".jpg"
     // },
     // {
     //   nombre: "Aliaga Bravo, Engels Pedro",
@@ -413,7 +413,7 @@ export class DoctoresComponent implements OnInit {
     //   anosServicio: "13",
     //   puntuacion: "4.1/ 5",
     //   cmp: "37153",
-    //   img_url: ".jpg"
+    //   imgUrl: ".jpg"
     // },
     // {
     //   nombre: "Alvarez Pirela, Jessica Mercedes",
@@ -422,7 +422,7 @@ export class DoctoresComponent implements OnInit {
     //   anosServicio: "14",
     //   puntuacion: "4.7/ 5",
     //   cmp: "30142",
-    //   img_url: ".jpg"
+    //   imgUrl: ".jpg"
     // },
     // {
     //   nombre: "Alvarez Chavez, Carlos Luis",
@@ -431,7 +431,7 @@ export class DoctoresComponent implements OnInit {
     //   anosServicio: "21",
     //   puntuacion: "4.2/ 5",
     //   cmp: "83194",
-    //   img_url: ".jpg"
+    //   imgUrl: ".jpg"
     // },
     // {
     //   nombre: "Amaro Padilla, Rosalia Elena",
@@ -440,7 +440,7 @@ export class DoctoresComponent implements OnInit {
     //   anosServicio: "12",
     //   puntuacion: "3.5/ 5",
     //   cmp: "22771",
-    //   img_url: ".jpg"
+    //   imgUrl: ".jpg"
     // },
     // {
     //   nombre: "Amorín Kajatt, Edgar",
@@ -449,7 +449,7 @@ export class DoctoresComponent implements OnInit {
     //   anosServicio: "12",
     //   puntuacion: "4.7/ 5",
     //   cmp: "14719",
-    //   img_url: ".jpg"
+    //   imgUrl: ".jpg"
     // },
     // {
     //   nombre: "Anduaga Merino, Germán",
@@ -458,7 +458,7 @@ export class DoctoresComponent implements OnInit {
     //   anosServicio: "17",
     //   puntuacion: "4.3/ 5",
     //   cmp: "14671",
-    //   img_url: ".jpg"
+    //   imgUrl: ".jpg"
     // },
     // {
     //   nombre: "Apaza León, José Luis",
@@ -467,7 +467,7 @@ export class DoctoresComponent implements OnInit {
     //   anosServicio: "23",
     //   puntuacion: "4.7/ 5",
     //   cmp: "03849",
-    //   img_url: ".jpg"
+    //   imgUrl: ".jpg"
     // }
     ];
   }
